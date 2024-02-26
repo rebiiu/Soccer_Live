@@ -6,7 +6,7 @@
     <title></title>
     <!-- Metadatos de la página web -->
     <meta charset="utf-8">
-    <meta name="author" content="Daniel Carranza">
+    <meta name="author" content="Juan Pablo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../resources/css/primeruso.css">
     <!-- IMPORTACIÓN DE RECURSOS EXTERNOS -->
@@ -23,50 +23,68 @@
     <main>
         <!-- Título del contenido principal -->
         </div>
-       
-            <h1>‎ ‎ </h1>
-            <h3 id="mainTitle" class="text-center">Primer Uso</h3>
-            <h4 class="text-center">Para continuar, deberás rellenar los siguientes campos:</h4>
+
+        <h1>‎ ‎ </h1>
+        <h3 id="mainTitle" class="text-center">
+            <font color="#FFFFFF">PRIMER USO</font>
+        </h3>
+        <h4 class="text-center">
+            <font color="#FFFFFF">PARA CONTINUAR, DEBERÁS RELLENAR LOS SIGUIENTES CAMPOS:</font>
+        </h4>
 
 
         <!-- Formulario para cambiar datos personales -->
+
         <form class="row g-3" id="profileForm">
+            
+            <p>
             <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="nombreAdministrador" class="form-label" >Nombre</label>
-                <input id="nombreAdministrador" type="text" name="nombreAdministrador" class="form-control" required>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="nombreAdministrador" class="form-label">Apellido</label>
-                <input id="nombreAdministrador" type="text" name="apellidoAdministrador" class="form-control" required>
+                <label for="nombreAdministrador" class="form-label">NOMBRE</label>
+                <input id="nombreAdministrador" type="text" name="nombreAdministrador" class="form-control"
+                    required>
+
+
+                </p>
+
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <label for="apellidoAdministrador" class="form-label">Telefono</label>
-                <input id="apellidoAdministrador" type="text" name="telefonoAdministrador" class="form-control"
+                <label for="apellidoAdministrador" class="form-label">APELLIDO</label>
+                <input id="apellidoAdministrador" type="text" name="apellidoAdministrador" class="form-control"
                     required>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="correoAdministrador" class="form-label">DUI</label>
-                <input id="correoAdministrador" type="email" name="DUIAdministrador" class="form-control" required>
+                <label for="telefonoAdministrador" class="form-label">TELEFONO</label>
+                <input id="telefonoAdministrador" type="email" name="telefonoAdministrador" class="form-control" required>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <label for="aliasAdministrador" class="form-label" >Correo Electronico</label>
-                <input id="aliasAdministrador" type="text" name="correoAdministrador" class="form-control" required>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <label for="aliasAdministrador" class="form-label">Contraseña</label>
-                <input id="aliasAdministrador" type="text" name="contraseñaAdministrador" class="form-control" required>
+                <label for="duiAdministrador" class="form-label">DUI</label>
+                <input id="duiAdministrador" type="text" name="duiAdministrador" class="form-control" required>
             </div>
             
+            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
+                <label for="correoAdministrador" class="form-label">CORREO ELECTRONICO</label>
+                <input id="correoAdministrador" type="text" name="correoAdministrador" class="form-control"
+                    required>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <label for="contraseñaAdministrador" class="form-label">CONTRASEÑA</label>
+                <input id="contraseñaAdministrador" type="text" name="contraseñaAdministrador" class="form-control"
+                    required>
+            </div>
+
+       
+
             <div class="text-center">
                 <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Guardar</button>
             </div>
+
         </form>
-       
-         
+
         <div class="modal fade" id="passwordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="modalTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
-               
+
             </div>
     </main>
     <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
