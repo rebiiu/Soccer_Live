@@ -1,0 +1,34 @@
+a {
+    text-decoration: none;
+}
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.form-right i {
+    font-size: 100px;
+}
+#boton{
+    background-color: #0C3A6B;
+    border: #0C3A6B;
+}
+#form1{
+    background-image: linear-gradient(to right, #126BA8, #0C3A6B);
+}
+.cen{
+    top: 100px;
+    position: relative;
+}
+.titulo{
+    left: 125px;
+    position: relative;
+}
+#fondo2{
+    font-family: Cambria, Cochin, 'Georgia', Times, Times New Roman, serif;
+}
+h3{
+    font-family: Cambria, Cochin, 'Georgia', Times, Times New Roman, serif;
+}
