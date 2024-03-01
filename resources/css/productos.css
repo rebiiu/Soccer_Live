@@ -14,8 +14,10 @@ section {
     padding: 80px 0;
     overflow: hidden;
 }
-
 #text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
+}
+#searchForm{
+    padding-left: 150px;
 }
