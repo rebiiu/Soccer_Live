@@ -11,11 +11,30 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 80px;
     overflow: hidden;
 }
 
 #text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
+}
+
+#searchForm {
+    padding-left: 215px;
+}
+
+.container-xl {
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#tabla {
+    background-color: #0C3A6B;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#boton {
+    background-color: #0C3A6B;
 }
