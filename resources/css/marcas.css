@@ -19,6 +19,7 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
 }
+
 #searchForm {
     padding-left: 215px;
 }
@@ -33,6 +34,15 @@ section {
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #boton {
+    background-color: #0C3A6B;
+}
+
+#icon {
+    padding: 10px;
+}
+
+#identify {
     background-color: #0C3A6B;
 }
