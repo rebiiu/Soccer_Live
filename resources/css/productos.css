@@ -43,6 +43,15 @@ section {
     padding: 10px;
 }
 
-#identify{
-        background-color: #0C3A6B;
+#identify {
+    background-color: #0C3A6B;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#modal-fondo {
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

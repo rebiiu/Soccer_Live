@@ -49,11 +49,11 @@
 
     <section id="hero" class="d-flex align-items-center">
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-          <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-9 text-center">
-              <h1 id="text">Administrar empleados</h1>
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1 id="text">Administrar empleados</h1>
+                </div>
             </div>
-          </div>
         </div>
     </section>
 
@@ -77,7 +77,8 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col-sm-6" id="icon">
-                    <a href="" class="btn" data-toggle="modal" id="identify">
+                    <a href="" class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         <span id="text">AGREGAR EMPLEADOS</span>
                     </a>
                     <a class="btn" data-toggle="modal">
@@ -98,6 +99,56 @@
                             </tr>
                         </thead>
                     </table>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar empleado</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row g-3" id="modal-fondo">
+                        <div class="col-sm-12 col-md-6 justify-content-center">
+                            <label for="imagenEmpleado" class="form-label">Imagen</label>
+                            <input id="imagenEmpleado" type="file" name="imagenEmpleado" class="form-control"
+                                accept=".png, .jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nombreEmpleado" class="form-label">Nombre</label>
+                            <input id="nombreEmpleado" type="text" name="nombreEmpleado" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="apellidoEmpleado" class="form-label">Apellido</label>
+                            <input id="apellidoEmpleado" type="text" name="apellidoEmpleado" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telefonoEmpleado" class="form-label">Teléfono</label>
+                            <input id="telefonoEmpleado" type="text" name="telefonoEmpleado" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="duiEmpleado" class="form-label">DUI</label>
+                            <input id="duiEmpleado" type="text" name="duiEmpleado" class="form-control"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="correoEmpleado" class="form-label">Correo electrónico</label>
+                            <input id="correoEmpleado" type="email" name="correoEmpleado" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="contraEmpleado" class="form-label">Contraseña</label>
+                            <input id="contraEmpleado" type="password" name="contraEmpleado" class="form-control"
+                                required>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
+                                width="40px"></button>
+                        <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
+                    </div>
                 </div>
             </div>
         </div>
