@@ -55,3 +55,8 @@ h1{
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#position{
+    background-color: #0C3A6B;
+    padding-left: 100px;
+}
