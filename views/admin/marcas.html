@@ -14,7 +14,7 @@
     <br>
     <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../admin/inicio.html">
                 <img src="../../resources/imgs/logo-no-background.png" alt="..." height="36">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -96,10 +96,26 @@
                                 <th class="text-center" id="tabla">ACCIONES</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <td id="table"></td>
+                            <td id="table"></td>
+                            <td id="table"></td>
+                            <td id="table"></td>
+                            <td id="table">
+                                <a class="btn btn-light" data-toggle="modal" id="identify" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1" href="" id="padding"><i><img
+                                            src="../../resources/imgs/edit.png" alt="" width="30px"
+                                            height="30px"></i></a>
+                                <a class="btn btn-light" data-toggle="modal" id="identify" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2" href=""><i><img src="../../resources/imgs/delete.png" alt=""
+                                            width="30px" height="30px"></i></a>
+                            </td>
+                        </tbody>
                     </table>
                 </div>
             </div>
         </div>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -129,6 +145,62 @@
                     </div>
                     <div class="modal-footer justify-content-center">
                         <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
+                                width="40px"></button>
+                        <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editar Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar marca</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row g-3" id="modal-fondo">
+                        <div class="col-sm-12 col-md-6 justify-content-center">
+                            <label for="imagenMarca" class="form-label">Imagen</label>
+                            <input id="imagenMarca" type="file" name="imagenMarca" class="form-control"
+                                accept=".png, .jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nombreMarca" class="form-label">Nombre</label>
+                            <input id="nombreMarca" type="text" name="nombreMarca" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="correoMarca" class="form-label">Correo electrónico</label>
+                            <input id="correoMarca" type="email" name="correoMarca" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telefonoMarca" class="form-label">Teléfono</label>
+                            <input id="telefonoMarca" type="text" name="telefonoMarca" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
+                                width="40px"></button>
+                        <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eliminar Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="text-center" id="table">
+                        <img src="../../resources/imgs/adver.png" class="rounded" alt="...">
+                        <h2 class="text-center">Advertencia</h2>
+                        <h4 class="text-center">¿Desea eliminar la marca?</h4>
+                    </div>
+                    <div class="modal-footer justify-content-center" id="table">
+                        <button type="button" class="btn"><img src="../../resources/imgs/listo.png" alt="" height="40px"
                                 width="40px"></button>
                         <button type="button" class="btn" data-bs-dismiss="modal"><img
                                 src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
