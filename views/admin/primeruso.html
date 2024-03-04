@@ -19,84 +19,65 @@
 </head>
 
 <body>
-    <!-- Contenido principal del documento -->
     <main>
-        <!-- Título del contenido principal -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1 m-5">
+                    <img src="../../resources/imgs/logo-no-background.png" class="logo" height="100px" width="400px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 d-flex flex-column align-items-center justify-content-center mt-5">
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <img src="../../resources/imgs/login.png" class="login" height="300px" width="300px">
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <button class=" btn-agregar btn bg-success mt-5 fw-bold text-light ">Agregar imagen</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <p class="fs-1 fw-bold text-light">Primer uso</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <p class="fs-4 text-light">Para continuar, deberás rellenar los siguientes campos</p> 
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center mt-5">
+                        <form>
+                            <div class="row row-cols-2 g-4">
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <input type="text" class="form-control w-75" placeholder="Nombre">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <input type="text" class="form-control w-75" placeholder="Apellido">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <input type="text" class="form-control w-75" placeholder="Teléfono">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <input type="text" class="form-control w-75" placeholder="DUI">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center">
+                                    <input type="text" class="form-control w-75" placeholder="Correo Electronico">
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-center" >
+                                    <input type="text" class="form-control w-75" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-5">
+                                    <button class="btn bg-success text-light fw-bold">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <h1>‎ ‎ </h1>
-        <h3 id="mainTitle" class="text-center">
-            <font color="#FFFFFF">PRIMER USO</font>
-        </h3>
-        <h4 class="text-center">
-            <font color="#FFFFFF">PARA CONTINUAR, DEBERÁS RELLENAR LOS SIGUIENTES CAMPOS:</font>
-        </h4>
-
-
-        <!-- Formulario para cambiar datos personales -->
-
-        <form class="row g-3" id="profileForm">
-            
-            <p>
-            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="nombreAdministrador" class="form-label">NOMBRE</label>
-                <input id="nombreAdministrador" type="text" name="nombreAdministrador" class="form-control"
-                    required>
-
-
-                </p>
-
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <label for="apellidoAdministrador" class="form-label">APELLIDO</label>
-                <input id="apellidoAdministrador" type="text" name="apellidoAdministrador" class="form-control"
-                    required>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="telefonoAdministrador" class="form-label">TELEFONO</label>
-                <input id="telefonoAdministrador" type="email" name="telefonoAdministrador" class="form-control" required>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <label for="duiAdministrador" class="form-label">DUI</label>
-                <input id="duiAdministrador" type="text" name="duiAdministrador" class="form-control" required>
-            </div>
-            
-            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
-                <label for="correoAdministrador" class="form-label">CORREO ELECTRONICO</label>
-                <input id="correoAdministrador" type="text" name="correoAdministrador" class="form-control"
-                    required>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-                <label for="contraseñaAdministrador" class="form-label">CONTRASEÑA</label>
-                <input id="contraseñaAdministrador" type="text" name="contraseñaAdministrador" class="form-control"
-                    required>
-            </div>
-
-       
-
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Guardar</button>
-            </div>
-
-        </form>
-
-        <div class="modal fade" id="passwordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="modalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-
-            </div>
     </main>
-    <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
-    <!-- Llamada al framework y librería de mensajes -->
-    <script type="text/javascript" src="../../resources/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../../resources/js/sweetalert.min.js"></script>
-    <!-- Llamada al controlador general de la aplicación -->
-    <script type="text/javascript" src="../../controllers/utils/components.js"></script>
-    <!-- Llamada al controlador del sitio privado -->
-    <script type="text/javascript" src="../../controllers/utils/admin.js"></script>
-    <!-- Llamada al controlador de la página web -->
-    <script type="text/javascript" src="../../controllers/admin/profile.js"></script>
+   
 </body>
 
 </html>

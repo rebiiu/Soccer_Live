@@ -1,3 +1,9 @@
 body{
     background-image: linear-gradient(to right, #6a7e94, #6a7e94);
 }
+.login{
+  margin-left: 150px;
+}
+.btn-agregar{
+  margin-left: 150px;
+}
