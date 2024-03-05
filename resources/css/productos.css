@@ -61,6 +61,11 @@ h1 {
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#padding{
+
+#padding {
     padding: 10px;
+}
+
+#search-addon {
+    background-color: #0C3A6B;
 }

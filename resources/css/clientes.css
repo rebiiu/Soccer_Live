@@ -57,6 +57,10 @@ section {
     padding: 10px;
 }
 
-#row{
+#row {
     padding: 10px;
+}
+
+#search-addon {
+    background-color: #0C3A6B;
 }
