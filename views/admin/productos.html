@@ -104,13 +104,17 @@
                             <td id="table"></td>
                             <td id="table">
                                 <a class="btn btn-light" data-toggle="modal" id="identify" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3" href="" id="padding"><i><img
+                                            src="../../resources/imgs/info.png" alt="" width="25px"
+                                            height="25px"></i></a>
+                                <a class="btn btn-light" data-toggle="modal" id="identify" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal1" href="" id="padding"><i><img
-                                            src="../../resources/imgs/edit.png" alt="" width="30px"
-                                            height="30px"></i></a>
+                                            src="../../resources/imgs/edit.png" alt="" width="25px"
+                                            height="25px"></i></a>
                                 <a class="btn btn-light" data-toggle="modal" id="identify" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal2" href=""><i><img
-                                            src="../../resources/imgs/delete.png" alt="" width="30px"
-                                            height="30px"></i></a>
+                                            src="../../resources/imgs/delete.png" alt="" width="25px"
+                                            height="25px"></i></a>
                             </td>
                         </tbody>
                     </table>
@@ -245,6 +249,62 @@
             </div>
         </div>
     </main>
+
+    <!-- Información Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <fieldset disabled>
+                    <div class="modal-body row g-3" id="modal-fondo">
+                        <div class="col-sm-12 col-md-6 justify-content-center">
+                            <label for="imagenProducto" class="form-label">Imagen</label>
+                            <input id="imagenProducto" type="file" name="imagenProducto" class="form-control"
+                                accept=".png, .jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nombreProducto" class="form-label">Nombre</label>
+                            <input id="nombreProducto" type="text" name="nombreProducto" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="precioProducto" class="form-label">Precio (US$)</label>
+                            <input id="precioProducto" type="number" name="precioProducto" min="0.01" step="0.01"
+                                class="form-control" required>
+                        </div>
+                        <div class="form-check form-switch form-check-reverse">
+                            <input class="form-check-input" type="checkbox" id="estadoProducto" name="estadoProducto"
+                                checked>
+                            <label class="form-check-label" for="estadoProducto">Estado</label>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="descripcionProducto" class="form-label">Descripción</label>
+                            <input id="descripcionProducto" type="text" name="descripcionProducto" class="form-control"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="categoriaProducto" class="form-label">Categoría</label>
+                            <select id="categoriaProducto" name="categoriaProducto" class="form-select" required>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="marcaProducto" class="form-label">Marca</label>
+                            <select id="marcaProducto" name="marcaProducto" class="form-select" required>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
+                            width="40px"></button>
+                    <button type="button" class="btn" data-bs-dismiss="modal"><img src="../../resources/imgs/close.png"
+                            alt="" height="40px" width="40px"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
