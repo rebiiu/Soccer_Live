@@ -68,25 +68,21 @@
     <!-- Contenido principal del documento -->
     <main>
         <!-- Formulario de búsqueda -->
-        <div class="row">
-            <form class="col-sm-12 col-md-6" id="searchForm">
-                <div class="row">
-                    <div class="col-6">
-                        <input type="search" class="form-control" name="search" placeholder="Buscar">
-                    </div>
-                    <!-- Llamamos a la imagen del buscador -->
-                    <div class="col-6">
-                        <button class="btn" type="submit" id="boton">
-                            <i class="bi bi-search"><img src="../../resources/imgs/001-loupe.png" alt="" width="30px"
-                                    height="25px"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
         <div class="container-xl">
             <div class="row">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="input-group rounded">
+                                <input type="search" class="form-control rounded" placeholder="Buscar"
+                                    aria-label="Search" aria-describedby="search-addon" />
+                                <span class="input-group-text border-0" id="search-addon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6" id="icon">
                     <!-- Botón para la asignar un empleado -->
                     <a href="" class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
@@ -139,13 +135,12 @@
             </div>
         </div>
 
-        <!-- Componente Modal Editar un empleado -->
+        <!-- Componente Modal Agregar un empleado -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar empleado</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body row g-3" id="modal-fondo">
                         <div class="col-sm-12 col-md-6 justify-content-center">
@@ -197,7 +192,6 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar empleado</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body row g-3" id="modal-fondo">
                         <div class="col-sm-12 col-md-6 justify-content-center">
@@ -268,7 +262,6 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Información del empleado</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <fieldset disabled>
                         <div class="modal-body row g-3" id="modal-fondo">
