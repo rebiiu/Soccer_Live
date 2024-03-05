@@ -51,12 +51,12 @@ section {
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/**/
+/*color y estilo de l modal*/
 #modal-fondo {
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+/*estilo y color de tabla administracion de empleados*/
 #table {
     background-color: #0C3A6B;
     color: #FFFFFF;
