@@ -56,7 +56,7 @@ h1 {
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/**/
+/*color de fondo y estilo de letra de la tabla administracion de categoría*/
 #table {
     background-color: #0C3A6B;
     color: #FFFFFF;
@@ -65,7 +65,7 @@ h1 {
 #padding{
     padding: 10px;
 }
-
+/*color de fondo a la imagen del buscador*/
 #search-addon {
     background-color: #0C3A6B;
 }
