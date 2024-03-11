@@ -1,5 +1,5 @@
 /*color a letra del menú de navegación*/
-#clientes {
+#pedidos {
     color: #A8E910;
 }
 /*background para el contenido del menú de navegación*/
@@ -20,6 +20,7 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
 }
+
 /*espacio para buscador*/
 #searchForm {
     padding-left: 215px;
