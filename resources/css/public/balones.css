@@ -4,10 +4,13 @@
 
 #fondo {
     background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
+   
 }
 
 body {
     background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
+    
+   
 }
 
 #buscador {
@@ -22,13 +25,20 @@ body {
     background-color: white; /* Fondo blanco para el campo de entrada */
     color: white; /* Color de texto blanco para el texto introducido */
 }
-
-.img-cuadradito {
-      
-        opacity: 0.6; /* Cambia este valor para ajustar el nivel de transparencia */
-    
+.cuadrado {
+    width: 310px;
+    height: 350px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    position: absolute; /* Establece la posición del cuadrado */
+        top: 150px; /* Ajusta la distancia desde la parte superior */
+        left: 350px; /* Ajusta la distancia desde la izquierda */
+        background-color: #ffffff52; /* Color de fondo */
 }
 
-.card-title{
-    color: white;
+.imagen {
+    width: 230px;
+    height: 230px;
 }
