@@ -1,5 +1,5 @@
 /*color a letra del menú de navegación*/
-#clientes {
+#pedidos {
     color: #A8E910;
 }
 /*background para el contenido del menú de navegación*/
@@ -64,4 +64,8 @@ section {
 
 #search-addon {
     background-color: #0C3A6B;
+}
+
+#estado{
+    color: black;
 }

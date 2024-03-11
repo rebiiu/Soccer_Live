@@ -118,18 +118,12 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar pedidos</h1>
                 </div>
                 <div class="modal-body row g-3" id="modal-fondo">
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Estados de Pedidos
-                        </a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Enviado</a></li>
-                            <li><a class="dropdown-item" href="#">En proceso</a></li>
-                            <li><a class="dropdown-item" href="#">Recibido</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-select" aria-label="Default select example" id="estado">
+                        <option selected>Estados de Pedidos</option>
+                        <option value="1">Enviado</option>
+                        <option value="2">En proceso</option>
+                        <option value="3">Recibido</option>
+                      </select>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
