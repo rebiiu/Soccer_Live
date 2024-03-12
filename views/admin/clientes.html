@@ -107,16 +107,16 @@
                             <td id="table"></td>
                             <td id="table">
                                 <div class="d-flex justify-content-center">
-                                    <a class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal3" href="" id="padding"><i><img
+                                    <a type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop3" id="identify" href="" id="padding"><i><img
                                                 src="../../resources/imgs/info.png" alt="" width="25px"
                                                 height="25px"></i></a>
-                                    <a class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal1" href="" id="padding"><i><img
+                                    <a type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop1" id="identify" href="" id="padding"><i><img
                                                 src="../../resources/imgs/edit.png" alt="" width="25px"
                                                 height="25px"></i></a>
-                                    <a class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2" href=""><i><img
+                                    <a type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2" id="identify" href=""><i><img
                                                 src="../../resources/imgs/delete.png" alt="" width="25px"
                                                 height="25px"></i></a>
                                 </div>
@@ -130,7 +130,8 @@
     </main>
 
     <!-- Componente  Modal para editar un cliente-->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -178,7 +179,8 @@
     </div>
 
     <!-- Componente  Modal para eliminar un cliente-->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="text-center" id="table">
@@ -197,7 +199,8 @@
     </div>
 
     <!-- Componente  Modal para Información del cliente-->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
