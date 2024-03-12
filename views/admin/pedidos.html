@@ -100,10 +100,9 @@
                             <td id="table"></td>
                             <td id="table">
                                 <div class="d-flex justify-content-center">
-                                    <a class="btn" data-toggle="modal" id="identify" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal1" href="" id="padding"><i><img
-                                                src="../../resources/imgs/info.png" alt="" width="25px"
-                                                height="25px"></i></a>
+                                    <a class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="identify"
+                                        href="" id="padding"><i><img src="../../resources/imgs/info.png" alt=""
+                                                width="25px" height="25px"></i></a>
                                 </div>
                             </td>
                         </tbody>
@@ -113,27 +112,28 @@
         </div>
     </main>
     <!--modal-->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar pedidos</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar pedido</h1>
                 </div>
                 <div class="modal-body row g-3" id="modal-fondo">
-                    <h1 class="text-center fs-5">Estados de pedidos</h1>
+                    <h1 class="text-center fs-5">Estado del pedido</h1>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Enviado</option>
                         <option value="2">En proceso</option>
                         <option value="3">Recibido</option>
-                        
-                      </select>
+
+                    </select>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
                             width="40px"></button>
                     <button type="button" class="btn" data-bs-dismiss="modal"><img src="../../resources/imgs/close.png"
                             alt="" height="40px" width="40px"></button>
-                            
+
                 </div>
             </div>
         </div>
