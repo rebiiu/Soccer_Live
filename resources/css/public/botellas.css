@@ -7,7 +7,8 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
+    background-color: #081F49 !important;
+    /*background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49) !important;*/
 }
 
 #buscador {
@@ -15,10 +16,63 @@ body {
 }
 
 .container-fluid input::placeholder {
-    color: white; /* Color blanco para el texto del marcador de posición */
+    color: white;
+    /* Color blanco para el texto del marcador de posición */
 }
 
 .container-fluid input#buscador {
-    background-color: white; /* Fondo blanco para el campo de entrada */
-    color: white; /* Color de texto blanco para el texto introducido */
+    background-color: white;
+    /* Fondo blanco para el campo de entrada */
+    color: white;
+    /* Color de texto blanco para el texto introducido */
+}
+
+
+
+.tema {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 70px;
+}
+
+.todito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#card {
+    background-color: rgba(189, 189, 189, 0.842);
+    border-radius: 5px;
+    height: 350px;
+    font-size: 20px;
+
+}
+
+#texto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.segunda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+#card {
+    background-color: rgba(189, 189, 189, 0.842);
+    border-radius: 5px;
+    height: 340px;
+    width: 300px;
+}
+
+#texto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
