@@ -72,3 +72,13 @@ border-radius: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#mod{
+    background-color: rgba(189, 189, 189, 0.842);
+    border-radius: 5px;
+    }
+
+    #botoncolor {
+        background-color:#A8E910 ; 
+        color:white;
+        border-color: #A8E910;
+     }
