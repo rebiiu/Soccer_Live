@@ -79,10 +79,72 @@ border-radius: 5px;
     max-width: 1900px;
     max-height: 875px;
     }
+#Precio{
+  margin-left: 240px;
+  margin-top: 35px;
+  font-size: 20px ;
+}
 
-
-    #botoncolor {
-        background-color:#A8E910 ; 
+ #botoncolor {
+        background-color:#5EAA37 ; 
         color:white;
-        border-color: #A8E910;
+        border-color: #5EAA37;
+        margin-top: 25px;
      }
+     
+#botoncompra{
+  background-color:#5EAA37 ; 
+  color:white;
+  border-color: #5EAA37;
+  margin-top: 30px;
+  
+}
+#preciocompra{
+  font-size: 20px ;
+}
+
+label{ color:grey;}  
+input[type = "radio"]{ display:none;}
+.clasificacion{
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }   
+  
+  #labeldes{
+    color: black;
+  }
