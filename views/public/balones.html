@@ -192,7 +192,7 @@
                 <!--modal primera tarjeta-->
                 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -214,11 +214,11 @@
                                         <div class="container text-center">
                                             <div class="row align-items-start">
                                                 <div class="col">
-                                                    <p class="small text-muted font-italic">$30.00</p>
+                                                    <p class="small text-muted font-italic" id="Precio">$30.00</p>
                                                 </div>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                    data-bs-target="#staticBackdrop10" id="botoncolor">
+                                                    data-bs-target="#staticBackdrop10" id="botoncompra">
                                                     Comprar
                                                     </button>
                                                 </div>
@@ -231,13 +231,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user1</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -249,13 +256,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user2</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -267,13 +281,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user3</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -297,7 +318,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop1" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -307,27 +331,34 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
                                     </button>
 
                                 </div>
-                                <!--Luigar de resena XDD-->
+                                <!--Lugar de resena-->
                                 <div class="col-sm-12 col-md-12">
                                     <div class="row align-items-start">
                                         <div class="usercliente col-md-4">
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user1</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -339,13 +370,21 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user2</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <form>
+                                                    <p class="clasificacion">
+                                                      <input id="radio1" type="radio" name="estrellas" value="5">
+                                                      <label for="radio1">★</label>
+                                                      <input id="radio2" type="radio" name="estrellas" value="4">
+                                                      <label for="radio2">★</label>
+                                                      <input id="radio3" type="radio" name="estrellas" value="3">
+                                                     <label for="radio3">★</label>
+                                                      <input id="radio4" type="radio" name="estrellas" value="2">
+                                                     <label for="radio4">★</label>
+                                                      <input id="radio5" type="radio" name="estrellas" value="1">
+                                                      <label for="radio5">★</label>
+                                                    </p>
+                                                  </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -357,13 +396,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user3</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -381,9 +427,12 @@
                 <!--modal compra primera tarjeta-->
                 <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop1" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -392,18 +441,24 @@
                                     <img src="../../resources/imgs/BALON 1.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">PUMA ORBITA</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$30.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -416,7 +471,7 @@
                 <!--Modal segunda tarjeta-->
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                             
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -434,13 +489,19 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$35.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop12" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$35.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop12" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
                                 </div>
                                 <!--Luigar de resena XDD-->
                                 <div class="row align-items-start">
@@ -448,13 +509,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user1</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -466,13 +534,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user2</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -484,13 +559,20 @@
                                         <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                             width="100px" class="img-fluid d-block mx-auto mb-3">
                                         <h3>user3</h3>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                        <form>
+                                            <p class="clasificacion">
+                                              <input id="radio1" type="radio" name="estrellas" value="5">
+                                              <label for="radio1">★</label>
+                                              <input id="radio2" type="radio" name="estrellas" value="4">
+                                              <label for="radio2">★</label>
+                                              <input id="radio3" type="radio" name="estrellas" value="3">
+                                             <label for="radio3">★</label>
+                                              <input id="radio4" type="radio" name="estrellas" value="2">
+                                             <label for="radio4">★</label>
+                                              <input id="radio5" type="radio" name="estrellas" value="1">
+                                              <label for="radio5">★</label>
+                                            </p>
+                                          </form>
                                         <div class="comentario">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                             sapiente omnis sequi ex facilis magni,
@@ -514,7 +596,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop2" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -524,7 +609,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -538,13 +623,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user1</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -556,13 +648,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user2</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -574,13 +673,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user3</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -598,9 +704,12 @@
                 <!--modal compra segunda tarjeta-->
                 <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop2" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -609,18 +718,24 @@
                                     <img src="../../resources/imgs/balon 2.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">NIKE ACADEMY</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$35.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -633,7 +748,7 @@
                 <!--Modal tercera tarjeta-->
                 <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                          
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -651,13 +766,19 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$40.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop14" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$40.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop14" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
 
                                 </div>
                                 <!--Luigar de resena XDD-->
@@ -668,13 +789,20 @@
                                                 <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                     width="100px" class="img-fluid d-block mx-auto mb-3">
                                                 <h3>user1</h3>
-                                                <div class="stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
+                                                <form>
+                                                    <p class="clasificacion">
+                                                      <input id="radio1" type="radio" name="estrellas" value="5">
+                                                      <label for="radio1">★</label>
+                                                      <input id="radio2" type="radio" name="estrellas" value="4">
+                                                      <label for="radio2">★</label>
+                                                      <input id="radio3" type="radio" name="estrellas" value="3">
+                                                     <label for="radio3">★</label>
+                                                      <input id="radio4" type="radio" name="estrellas" value="2">
+                                                     <label for="radio4">★</label>
+                                                      <input id="radio5" type="radio" name="estrellas" value="1">
+                                                      <label for="radio5">★</label>
+                                                    </p>
+                                                  </form>
                                                 <div class="comentario">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                     sapiente omnis sequi ex facilis magni,
@@ -686,13 +814,20 @@
                                                 <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                     width="100px" class="img-fluid d-block mx-auto mb-3">
                                                 <h3>user2</h3>
-                                                <div class="stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
+                                                <form>
+                                                    <p class="clasificacion">
+                                                      <input id="radio1" type="radio" name="estrellas" value="5">
+                                                      <label for="radio1">★</label>
+                                                      <input id="radio2" type="radio" name="estrellas" value="4">
+                                                      <label for="radio2">★</label>
+                                                      <input id="radio3" type="radio" name="estrellas" value="3">
+                                                     <label for="radio3">★</label>
+                                                      <input id="radio4" type="radio" name="estrellas" value="2">
+                                                     <label for="radio4">★</label>
+                                                      <input id="radio5" type="radio" name="estrellas" value="1">
+                                                      <label for="radio5">★</label>
+                                                    </p>
+                                                  </form>
                                                 <div class="comentario">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                     sapiente omnis sequi ex facilis magni,
@@ -704,13 +839,20 @@
                                                 <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                     width="100px" class="img-fluid d-block mx-auto mb-3">
                                                 <h3>user3</h3>
-                                                <div class="stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
+                                                <form>
+                                                    <p class="clasificacion">
+                                                      <input id="radio1" type="radio" name="estrellas" value="5">
+                                                      <label for="radio1">★</label>
+                                                      <input id="radio2" type="radio" name="estrellas" value="4">
+                                                      <label for="radio2">★</label>
+                                                      <input id="radio3" type="radio" name="estrellas" value="3">
+                                                     <label for="radio3">★</label>
+                                                      <input id="radio4" type="radio" name="estrellas" value="2">
+                                                     <label for="radio4">★</label>
+                                                      <input id="radio5" type="radio" name="estrellas" value="1">
+                                                      <label for="radio5">★</label>
+                                                    </p>
+                                                  </form>
                                                 <div class="comentario">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                     sapiente omnis sequi ex facilis magni,
@@ -736,7 +878,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop3" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -746,7 +891,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -761,13 +906,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user1</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -779,13 +931,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user2</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -797,13 +956,20 @@
                                             <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                 width="100px" class="img-fluid d-block mx-auto mb-3">
                                             <h3>user3</h3>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
+                                            <form>
+                                                <p class="clasificacion">
+                                                  <input id="radio1" type="radio" name="estrellas" value="5">
+                                                  <label for="radio1">★</label>
+                                                  <input id="radio2" type="radio" name="estrellas" value="4">
+                                                  <label for="radio2">★</label>
+                                                  <input id="radio3" type="radio" name="estrellas" value="3">
+                                                 <label for="radio3">★</label>
+                                                  <input id="radio4" type="radio" name="estrellas" value="2">
+                                                 <label for="radio4">★</label>
+                                                  <input id="radio5" type="radio" name="estrellas" value="1">
+                                                  <label for="radio5">★</label>
+                                                </p>
+                                              </form>
                                             <div class="comentario">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                 sapiente omnis sequi ex facilis magni,
@@ -822,9 +988,12 @@
                 <!--modal compra tercera tarjeta-->
                 <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop3" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -833,18 +1002,24 @@
                                     <img src="../../resources/imgs/BALON 3.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ADIDAS UCL</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$40.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -857,7 +1032,7 @@
                 <!--Modal cuarta tarjeta-->
                 <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                               
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -875,31 +1050,43 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$30.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop15" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
-
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$30.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop15" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
                                 </div>
                                 <!--Luigar de resena XDD-->
                                 <div class="col-sm-12 col-md-12">
-                                    <<div class="col-sm-12 col-md-12">
+                                    <div class="col-sm-12 col-md-12">
                                         <div class="col-sm-12 col-md-12">
                                             <div class="row align-items-start">
                                                 <div class="usercliente col-md-4">
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -911,13 +1098,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -929,13 +1123,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -962,7 +1163,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop4" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -972,7 +1176,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -988,13 +1192,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1006,13 +1217,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1024,13 +1242,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1050,9 +1275,12 @@
                 <!--modal compra cuarta tarjeta-->
                 <div class="modal fade" id="staticBackdrop15" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop4" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1061,18 +1289,24 @@
                                     <img src="../../resources/imgs/BALON 4.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">MLS PRO</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$30.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1085,7 +1319,7 @@
                 <!--Modal quinta tarjeta-->
                 <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                             
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -1103,14 +1337,19 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$35.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop17" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
-
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$35.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop17" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
                                 </div>
                                 <!--Luigar de resena XDD-->
                                 <div class="col-sm-12 col-md-12">
@@ -1121,13 +1360,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1139,13 +1385,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1157,13 +1410,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1190,7 +1450,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop5" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1200,7 +1463,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1216,13 +1479,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1234,13 +1504,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1252,13 +1529,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1278,9 +1562,12 @@
                 <!--modal compra quinta tarjeta-->
                 <div class="modal fade" id="staticBackdrop17" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop5" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1289,18 +1576,24 @@
                                     <img src="../../resources/imgs/BALON 5.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ADIDAS ACADEMY</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$35.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1313,7 +1606,7 @@
                 <!--Modal sexta tarjeta-->
                 <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">  
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -1331,14 +1624,19 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$150.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop19" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
-
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$150.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop19" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
                                 </div>
                                 <!--Luigar de resena XDD-->
                                 <div class="col-sm-12 col-md-12">
@@ -1349,13 +1647,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1367,13 +1672,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1385,13 +1697,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1418,7 +1737,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop6" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1428,7 +1750,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1444,13 +1766,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1462,13 +1791,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1480,13 +1816,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1506,9 +1849,12 @@
                 <!--modal compra sexta tarjeta-->
                 <div class="modal fade" id="staticBackdrop19" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop6" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1517,18 +1863,24 @@
                                     <img src="../../resources/imgs/BALON 6.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">PUMA ACCELERATE</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$150.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1541,7 +1893,7 @@
                 <!--Modal septima tarjeta-->
                 <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog  modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                        
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -1559,14 +1911,19 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$40.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop21" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
-
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$40.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop21" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>                               
                                 </div>
                                 <!--Luigar de resena XDD-->
                                 <div class="col-sm-12 col-md-12">
@@ -1577,13 +1934,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1595,13 +1959,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1613,13 +1984,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1646,7 +2024,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop7" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1656,7 +2037,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1672,13 +2053,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1690,13 +2078,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1708,13 +2103,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1734,9 +2136,12 @@
                 <!--modal compra septima tarjeta-->
                 <div class="modal fade" id="staticBackdrop21" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop7" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1745,18 +2150,24 @@
                                     <img src="../../resources/imgs/BALON 10.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ADIDAS AZTECA</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$40.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1769,7 +2180,7 @@
                 <!--Modal octava tarjeta-->
                 <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
                             <div class="modal-header text-center">                               
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -1787,13 +2198,20 @@
                                         exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
                                         saepe sunt
                                         reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
-                                    <div>
-                                        <p class="small text-muted font-italic">$40.00</p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop23" id="botoncolor">
-                                            Comprar
-                                        </button>
-                                    </div>
+                                        <div class="container text-center">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <p class="small text-muted font-italic" id="Precio">$40.00</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop23" id="botoncompra">
+                                                    Comprar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                      </div>
+
 
                                 </div>
                                 <!--Luigar de resena XDD-->
@@ -1805,13 +2223,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1823,13 +2248,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1841,13 +2273,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1874,7 +2313,10 @@
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop8" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1884,7 +2326,7 @@
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
-                                    <label for="resena" class="form-label">Reseña</label>
+                                    <label for="resena" class="form-label" id="labeldes">Reseña</label>
                                     <input id="resena" type="text" name="resena" class="form-control" required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
@@ -1900,13 +2342,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user1</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1918,13 +2367,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user2</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1936,13 +2392,20 @@
                                                     <img src="../../resources/imgs/usercliente.png" alt="" height="100px"
                                                         width="100px" class="img-fluid d-block mx-auto mb-3">
                                                     <h3>user3</h3>
-                                                    <div class="stars">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
+                                                    <form>
+                                                        <p class="clasificacion">
+                                                          <input id="radio1" type="radio" name="estrellas" value="5">
+                                                          <label for="radio1">★</label>
+                                                          <input id="radio2" type="radio" name="estrellas" value="4">
+                                                          <label for="radio2">★</label>
+                                                          <input id="radio3" type="radio" name="estrellas" value="3">
+                                                         <label for="radio3">★</label>
+                                                          <input id="radio4" type="radio" name="estrellas" value="2">
+                                                         <label for="radio4">★</label>
+                                                          <input id="radio5" type="radio" name="estrellas" value="1">
+                                                          <label for="radio5">★</label>
+                                                        </p>
+                                                      </form>
                                                     <div class="comentario">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad
                                                         sapiente omnis sequi ex facilis magni,
@@ -1962,9 +2425,12 @@
                 <!--modal compra octava tarjeta-->
                 <div class="modal fade" id="staticBackdrop23" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content" id="mod">
-                            <div class="modal-header text-center">
+                            <div class="modal-header ">
+                                <a class="btn" data-bs-target="#staticBackdrop8" data-bs-toggle="modal"><img
+                                    src="../../resources/imgs/flecha.png" alt="" height="20px" width="20px"
+                                    class="img-fluid d-block mx-auto mb-3"> </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -1973,18 +2439,24 @@
                                     <img src="../../resources/imgs/BALON 8.png" alt="" height="300px" width="300px"
                                         class="img-fluid d-block mx-auto mb-3"></i>
                                 </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="nombrebalon" class="form-label">Nombre</label>
-                                    <input id="nombrebalon" type="text" name="nombrebalon" class="form-control"
-                                        required>
-                                    <label for="descripcionbalon" class="form-label">Descripcion del producto</label>
-                                    <input id="descripcionbalon" type="text" name="descripcionbalon"
-                                        class="form-control" required>
-                                    <label for="direccionbalon" class="form-label">Dirección</label>
-                                    <input id="direccionbalon" type="text" name="direccionbalon" class="form-control"
-                                        required>
-                                    <label for="preciobalon" class="form-label">Precio</label>
-                                    <input id="preciobalon" type="text" name="preciobalon" class="form-control"
+                                <div class="col-sm-12 col-md-6">                                   
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ADIDAS BRAZUCA</h1>
+                                    <label id="labeldes" for="descripcionbalon" class="form-label">Descripcion del producto:</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="direccionbalon" class="form-label">Dirección</label>
+                                    <p class="small text-muted font-italic">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Repellat velit consequatur commodi explicabo facere
+                                        exercitationem vitae ratione dolorem, doloribus itaque blanditiis voluptatum
+                                        saepe sunt
+                                        reiciendis dolores cupiditate, tenetur debitis aspernatur.</p>
+                                    <label id="labeldes" for="preciobalon" class="form-label">Precio:</label>
+                                    <p class="small text-muted font-italic" id="preciocompra">$40.00</p>
+                                    <label id="labeldes" for="cantidadbalon" class="form-label">Cantidad:</label>
+                                    <input id="cantidadbalon" type="text" name="cantidadbalon" class="form-control"
                                         required>
                                     <button type="button" class="btn btn-primary" id="botoncolor">
                                         listo
