@@ -10,7 +10,7 @@ body {
     background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
 }
 .container{
-    padding: 20px;
+    padding: 10px;
 }
 #buscador {
     background-color: transparent !important;
@@ -24,3 +24,4 @@ body {
     background-color: white; /* Fondo blanco para el campo de entrada */
     color: white; /* Color de texto blanco para el texto introducido */
 }
+
