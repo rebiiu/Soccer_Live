@@ -80,6 +80,9 @@ body {
 #mod{
     background-color: rgba(189, 189, 189, 0.842);
     border-radius: 5px;
+    margin-top: 80px;
+    max-width: 1900px;
+    max-height: 875px;
     }
 
     #botoncolor {
