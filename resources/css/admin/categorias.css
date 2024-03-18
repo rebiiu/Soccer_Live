@@ -2,43 +2,51 @@
 #categorias {
     color: #A8E910;
 }
-/*background para el contenido del menú de navegación*/
+
 #fondo {
-    background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
-/*background para el contenido principal*/
+
 body {
     background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
 }
+
 /*espacio para la divicion de la secion*/
 section {
     padding: 80px;
     overflow: hidden;
 }
+
 /*estilo y color a la letra*/
 #text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
 }
+
 /*espacio para buscador*/
 #searchForm {
     padding-left: 215px;
 }
+
 /*contenedor para boton asignar, imagen y la tabla de administración*/
 .container-xl {
     padding: 50px;
     border-radius: 10px;
 }
+
 /*estilo y color a la tabla de administracion de categoría*/
 #tabla {
     background-color: #0C3A6B;
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*color al botón*/
 #boton {
     background-color: #0C3A6B;
 }
+
 /*espacio a la imagen*/
 #icon {
     padding: 10px;
@@ -47,24 +55,29 @@ section {
 #identify {
     background-color: #0C3A6B;
 }
+
 /*estilo de letra*/
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*esitlo y color al modal*/
 #modal-fondo {
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*color de fondo y estilo de letra de la tabla administracion de categoría*/
 #table {
     background-color: #0C3A6B;
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#padding{
+
+#padding {
     padding: 10px;
 }
+
 /*color de fondo a la imagen del buscador*/
 #search-addon {
     background-color: #0C3A6B;
