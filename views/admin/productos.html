@@ -165,10 +165,12 @@
                             <input id="precioProducto" type="number" name="precioProducto" min="0.01" step="0.01"
                                 class="form-control" required>
                         </div>
-                        <div class="form-check form-switch form-check-reverse">
-                            <input class="form-check-input" type="checkbox" id="estadoProducto" name="estadoProducto"
-                                checked>
-                            <label class="form-check-label" for="estadoProducto">Estado</label>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-check form-switch form-check-reverse">
+                                <input class="form-check-input" type="checkbox" id="estadoProducto"
+                                    name="estadoProducto" checked>
+                                <label class="form-check-label" for="estadoProducto">Estado</label>
+                            </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="descripcionProducto" class="form-label">Descripción</label>
@@ -207,17 +209,18 @@
                     <div class="modal-body row g-3" id="modal-fondo">
                         <div class="col-sm-12 col-md-6 justify-content-center">
                             <label for="EditarImagenProducto" class="form-label">Imagen</label>
-                            <input id="EditarImagenProducto" type="file" name="EditarImagenProducto" class="form-control"
-                                accept=".png, .jpg">
+                            <input id="EditarImagenProducto" type="file" name="EditarImagenProducto"
+                                class="form-control" accept=".png, .jpg">
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="EditarNombreProducto" class="form-label">Nombre</label>
-                            <input id="EditarNombreProducto" type="text" name="EditarNombreProducto" class="form-control" required>
+                            <input id="EditarNombreProducto" type="text" name="EditarNombreProducto"
+                                class="form-control" required>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="EditarPrecioProducto" class="form-label">Precio (US$)</label>
-                            <input id="EditarPrecioProducto" type="number" name="EditarPrecioProducto" min="0.01" step="0.01"
-                                class="form-control" required>
+                            <input id="EditarPrecioProducto" type="number" name="EditarPrecioProducto" min="0.01"
+                                step="0.01" class="form-control" required>
                         </div>
                         <div class="form-check form-switch form-check-reverse">
                             <input class="form-check-input" type="checkbox" id="estadoProducto" name="estadoProducto"
