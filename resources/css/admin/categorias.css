@@ -3,11 +3,6 @@
     color: #A8E910;
 }
 
-#fondo {
-    background-color: transparent !important;
-    border-color: transparent !important;
-}
-
 body {
     background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
 }
@@ -81,4 +76,13 @@ h1 {
 /*color de fondo a la imagen del buscador*/
 #search-addon {
     background-color: #0C3A6B;
+}
+
+.button-agregar {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #A8E910;
+    color: white;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
