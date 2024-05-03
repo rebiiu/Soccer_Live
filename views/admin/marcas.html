@@ -96,7 +96,7 @@
             <!-- Tabla de administracion de marcas -->
             <div class="table-responsive">
                 <div class="table-wrapper">
-                    <table class="table table-striped table-hover">
+                    <table class="table table-hover">
                         <!-- Cabeza de la tabla para mostrar la cantidad de registros y los títulos de las columnas -->
                         <thead>
                             <tr>
@@ -124,33 +124,36 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar marca</h1>
                     </div>
-                <form>
-                    <div class="modal-body row g-3" id="modal-fondo">
-                        <div class="col-sm-12 col-md-6 justify-content-center">
-                            <label for="AgregarImagenMarca" class="form-label">Imagen</label>
-                            <input id="AgregarImagenMarca" type="file" name="AgregarImagenMarca" class="form-control"
-                                accept=".png, .jpg">
+                    <form>
+                        <div class="modal-body row g-3" id="modal-fondo">
+                            <div class="col-sm-12 col-md-6 justify-content-center">
+                                <label for="AgregarImagenMarca" class="form-label">Imagen</label>
+                                <input id="AgregarImagenMarca" type="file" name="AgregarImagenMarca"
+                                    class="form-control" accept=".png, .jpg">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="AgregarNombreMarca" class="form-label">Nombre</label>
+                                <input id="AgregarNombreMarca" type="text" name="AgregarNombreMarca"
+                                    class="form-control" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="AgregarCorreoMarca" class="form-label">Correo electrónico</label>
+                                <input id="AgregarCorreoMarca" type="email" name="AgregarCorreoMarca"
+                                    class="form-control" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="AgregarTelefonoMarca" class="form-label">Teléfono</label>
+                                <input id="AgregarTelefonoMarca" type="text" name="AgregarTelefonoMarca"
+                                    class="form-control" required>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="AgregarNombreMarca" class="form-label">Nombre</label>
-                            <input id="AgregarNombreMarca" type="text" name="AgregarNombreMarca" class="form-control" required>
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt=""
+                                    height="40px" width="40px"></button>
+                            <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                    src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="AgregarCorreoMarca" class="form-label">Correo electrónico</label>
-                            <input id="AgregarCorreoMarca" type="email" name="AgregarCorreoMarca" class="form-control" required>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="AgregarTelefonoMarca" class="form-label">Teléfono</label>
-                            <input id="AgregarTelefonoMarca" type="text" name="AgregarTelefonoMarca" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
-                                width="40px"></button>
-                        <button type="button" class="btn" data-bs-dismiss="modal"><img
-                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
-                    </div>
-                </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -163,31 +166,36 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar marca</h1>
                     </div>
-                    <div class="modal-body row g-3" id="modal-fondo">
-                        <div class="col-sm-12 col-md-6 justify-content-center">
-                            <label for="EditarImagenMarca" class="form-label">Imagen</label>
-                            <input id="EditarImagenMarca" type="file" name="EditarImagenMarca" class="form-control"
-                                accept=".png, .jpg">
+                    <form>
+                        <div class="modal-body row g-3" id="modal-fondo">
+                            <div class="col-sm-12 col-md-6 justify-content-center">
+                                <label for="EditarImagenMarca" class="form-label">Imagen</label>
+                                <input id="EditarImagenMarca" type="file" name="EditarImagenMarca" class="form-control"
+                                    accept=".png, .jpg">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="EditarNombreMarca" class="form-label">Nombre</label>
+                                <input id="EditarNombreMarca" type="text" name="EditarNombreMarca" class="form-control"
+                                    required>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="EditarCorreoMarca" class="form-label">Correo electrónico</label>
+                                <input id="EditarCorreoMarca" type="email" name="EditarCorreoMarca" class="form-control"
+                                    required>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="EditarTelefonoMarca" class="form-label">Teléfono</label>
+                                <input id="EditarTelefonoMarca" type="text" name="EditarTelefonoMarca"
+                                    class="form-control" required>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="EditarNombreMarca" class="form-label">Nombre</label>
-                            <input id="EditarNombreMarca" type="text" name="EditarNombreMarca" class="form-control" required>
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt=""
+                                    height="40px" width="40px"></button>
+                            <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                    src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="EditarCorreoMarca" class="form-label">Correo electrónico</label>
-                            <input id="EditarCorreoMarca" type="email" name="EditarCorreoMarca" class="form-control" required>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <label for="EditarTelefonoMarca" class="form-label">Teléfono</label>
-                            <input id="EditarTelefonoMarca" type="text" name="EditarTelefonoMarca" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt="" height="40px"
-                                width="40px"></button>
-                        <button type="button" class="btn" data-bs-dismiss="modal"><img
-                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

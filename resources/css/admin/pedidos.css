@@ -72,3 +72,7 @@ section {
 #search-addon {
     background-color: #0C3A6B;
 }
+
+.table-responsive{
+    padding: 20px;
+}
