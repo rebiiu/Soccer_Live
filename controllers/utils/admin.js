@@ -71,23 +71,6 @@ const loadTemplate = async () => {
                 </nav>
             </header>
             `);
-            // Se agrega el pie de la página web después del contenido principal.
-            MAIN.insertAdjacentHTML('afterend', `
-                <footer>
-                    <nav class="navbar fixed-bottom bg-body-tertiary">
-                        <div class="container">
-                            <div>
-                                <p><a class="nav-link" href="https://github.com/dacasoft/coffeeshop" target="_blank"><i class="bi bi-github"></i> CoffeeShop</a></p>
-                                <p><i class="bi bi-c-square-fill"></i> 2018-2024 Todos los derechos reservados</p>
-                            </div>
-                            <div>
-                                <p><a class="nav-link" href="../public/" target="_blank"><i class="bi bi-cart-fill"></i> Sitio público</a></p>
-                                <p><i class="bi bi-envelope-fill"></i> dacasoft@outlook.com</p>
-                            </div>
-                        </div>
-                    </nav>
-                </footer>
-            `);
         } else {
             sweetAlert(3, DATA.error, false, 'index.html');
         }
@@ -105,17 +88,6 @@ const loadTemplate = async () => {
                         </div>
                     </nav>
                 </header>
-            `);
-            // Se agrega el pie de la página web después del contenido principal.
-            MAIN.insertAdjacentHTML('afterend', `
-                <footer>
-                    <nav class="navbar fixed-bottom bg-body-tertiary">
-                        <div class="container">
-                            <p><a class="nav-link" href="https://github.com/dacasoft/coffeeshop" target="_blank"><i class="bi bi-github"></i> CoffeeShop</a></p>
-                            <p><i class="bi bi-envelope-fill"></i> dacasoft@outlook.com</p>
-                        </div>
-                    </nav>
-                </footer>
             `);
         } else {
             location.href = 'index.html';
