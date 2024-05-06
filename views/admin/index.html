@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- Contenido del body-->
+    <!-- Formulario para iniciar sesión -->
     <div class="login-page" id="fondo2">
         <div class="container">
             <div class="row">
@@ -25,8 +25,8 @@
                             <div class="col-md-7 pe-0">
                                 <div class="form-left h-100 py-5 px-5">
                                     <!-- Contenido del login-->
-                                    <form action="" class="row g-4">
-                                        <h3 class="text-center" id="h3">Bienvenido, ingresa tus credenciales</h3>
+                                    <form class="row g-4">
+                                        <h3 class="text-center" id="h">Bienvenido, ingresa tus credenciales</h3>
                                         <div class="col-12">
                                             <label>Correo electrónico</label>
                                             <div class="input-group">
@@ -47,8 +47,9 @@
                                         </div>
                                         <!-- Se redirecciona a otra pestaña con el boton -->
                                         <div class="d-grid gap-2">
-                                            <a href="../admin/inicio.html" class="btn" type="submit" id="boton">Iniciar sesión</a>
+                                            <button class="btn btn-primary" type="submit">Iniciar sesión</button>
                                         </div>
+                                    </form>
                                     </form>
                                 </div>
                             </div>
@@ -67,6 +68,65 @@
             </div>
         </div>
     </div>
+    <!-- Formulario para crear el primer administrador -->
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="text-center" id="h3">REGISTRAR PRIMER USUARIO</h3>
+                            <div class="text-center" id="Imagen">
+                                <img src="../../resources/imgs/logo-no-background.png" alt="" width="200" height="50">
+                            </div>
+                            <form>
+                                <div class="row g-3" id="formulario">
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarNombreEmpleado" class="form-label">Nombre</label>
+                                        <input id="AgregarNombreEmpleado" type="text" name="AgregarNombreEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarApellidoEmpleado" class="form-label">Apellido</label>
+                                        <input id="AgregarApellidoEmpleado" type="text" name="AgregarApellidoEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarTelefonoEmpleado" class="form-label">Teléfono</label>
+                                        <input id="AgregarTelefonoEmpleado" type="text" name="AgregarTelefonoEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarTelefonoEmpleado" class="form-label">DUI</label>
+                                        <input id="AgregarTelefonoEmpleado" type="text" name="AgregarTelefonoEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarDuiEmpleado" class="form-label">Correo
+                                            electrónico</label>
+                                        <input id="AgregarDuiEmpleado" type="email" name="AgregarDuiEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="AgregarContraEmpleado" class="form-label">Contraseña</label>
+                                        <input id="AgregarContraEmpleado" type="password" name="AgregarContraEmpleado"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 justify-content-center">
+                                        <label for="AgregarImagenEmpleado" class="form-label">Imagen</label>
+                                        <input id="AgregarImagenEmpleado" type="file" name="AgregarImagenEmpleado"
+                                            class="form-control" accept=".png, .jpg">
+                                    </div>
+                                    <div class="mt-4 pt-2 text-center">
+                                        <button class="buttonG" type="submit">Guardar</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
