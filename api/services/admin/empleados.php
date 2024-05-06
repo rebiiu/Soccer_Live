@@ -36,17 +36,15 @@ if (isset($_GET['action'])) {
                     !$empleado->setClave($_POST['claveEmpleado']) or
                     !$empleado->setImagen($_POST['imagenEmpleado'])
                 ) {
-                    $result['error'] = $administrador->getDataError();
-                } elseif ($_POST['claveEmpleado'] != $_POST['confirmarClave']) {
-                    $result['error'] = 'Contraseñas diferentes';
-                }
-                    $result['error'] = $empleado->getDataError();
-                } elseif ($empleado->createRow()) {
-                    $result['status'] = 1;
-                    $result['message'] = 'empleado creado correctamente';
-                } else {
-                    $result['error'] = 'Ocurrió un problema al crear el empleado';
-                }
+                        $result['error'] = $administrador->getDataError();
+                    } elseif ($_POST['claveEmpleado'] != $_POST['confirmarClave']) {
+                        $result['error'] = 'Contraseñas diferentes';
+                    } elseif ($administrador->createRow()) {
+                        $result['status'] = 1;
+                        $result['message'] = 'Empleado creado correctamente';
+                    } else {
+                        $result['error'] = 'Ocurrió un problema al crear el administrador';
+                    }
                 break;
             case 'readAll':
                 if ($result['dataset'] = $empleado->readAll()) {
