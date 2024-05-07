@@ -19,11 +19,6 @@ section {
     color: #FFFFFF;
 }
 
-/*espacio para buscador*/
-#searchForm {
-    padding-left: 215px;
-}
-
 /*contenedor para boton asignar, imagen y la tabla de administración*/
 .container-xl {
     padding: 50px;
@@ -85,4 +80,8 @@ h1 {
     color: white;
     border: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tr{
+    background-color: #0C3A6B;
 }

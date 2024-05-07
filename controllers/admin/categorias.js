@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Método del evento para cuando se envía el formulario de buscar.
-/*SEARCH_FORM.addEventListener('submit', (event) => {
+SEARCH_FORM.addEventListener('submit', (event) => {
     // Se evita recargar la página web después de enviar el formulario.
     event.preventDefault();
     // Constante tipo objeto con los datos del formulario.
     const FORM = new FormData(SEARCH_FORM);
     // Llamada a la función para llenar la tabla con los resultados de la búsqueda.
     fillTable(FORM);
-});*/
+})
 
 // Método del evento para cuando se envía el formulario de guardar.
 SAVE_FORM.addEventListener('submit', async (event) => {
@@ -80,14 +80,11 @@ const fillTable = async (form = null) => {
                     <td>${row.nombre_categoria}</td>
                     <td>${row.descripcion_categoria}</td>
                     <td>
-                        <button type="button" class="btn btn-info" onclick="openUpdate(${row.id_categoria})">
+                        <button type="button" class="btn btn-success" onclick="openUpdate(${row.id_categoria})">
                             <i class="bi bi-pencil-fill"></i>
                         </button>
                         <button type="button" class="btn btn-danger" onclick="openDelete(${row.id_categoria})">
                             <i class="bi bi-trash-fill"></i>
-                        </button>
-                        <button type="button" class="btn btn-warning" onclick="openReport(${row.id_categoria})">
-                            <i class="bi bi-filetype-pdf"></i>
                         </button>
                     </td>
                 </tr>

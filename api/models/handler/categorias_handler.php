@@ -23,7 +23,7 @@ class CategoriaHandler
     public function searchRows()
     {
         $value = '%' . Validator::getSearchValue() . '%';
-        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria,
+        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria
                 FROM categorias
                 WHERE nombre_categoria LIKE ? OR descripcion_categoria LIKE ?
                 ORDER BY nombre_categoria';
@@ -49,7 +49,7 @@ class CategoriaHandler
 
     public function readOne()
     {
-        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria,
+        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria
                 FROM categorias
                 WHERE id_categoria = ?';
         $params = array($this->id);
@@ -67,7 +67,7 @@ class CategoriaHandler
 
     public function updateRow()
     {
-        $sql = 'UPDATE categoria
+        $sql = 'UPDATE categorias
                 SET imagen_categoria = ?, nombre_categoria = ?, descripcion_categoria = ?
                 WHERE id_categoria = ?';
         $params = array($this->imagen, $this->nombre, $this->descripcion, $this->id);
