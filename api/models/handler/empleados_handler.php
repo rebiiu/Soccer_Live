@@ -16,7 +16,6 @@ class EmpleadoHandler
     protected $dui = null;
     protected $clave = null;
     protected $correo = null;
-    protected $imagen = null;
 
     /*
      *  Métodos para gestionar la cuenta del empleado.
@@ -75,7 +74,7 @@ class EmpleadoHandler
         $sql = 'UPDATE empleados
                 SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?, clave_empleado = ?, correo_empleado = ?
                 WHERE id_empleado = ?';
-        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo, $this->imagen, $_SESSION['idEmpleado']);
+        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo, $_SESSION['idEmpleado']);
         return Database::executeRow($sql, $params);
     }
 
@@ -129,7 +128,7 @@ class EmpleadoHandler
 
     public function deleteRow()
     {
-        $sql = 'DELETE FROM empleado
+        $sql = 'DELETE FROM empleados
                 WHERE id_empleado = ?';
         $params = array($this->id);
         return Database::executeRow($sql, $params);

@@ -125,15 +125,10 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="modalTitle"></h1>
                     </div>
-                    <form id="saveFrom">
+                    <form id="saveForm">
                         <!-- Campo oculto para asignar el id del registro al momento de modificar -->
                         <input type="hidden" id="idCategoria" name="idCategoria">
                         <div class="modal-body row g-3" id="modal-fondo">
-                            <div class="col-sm-12 col-md-6 justify-content-center">
-                                <label for="imagenCategoria" class="form-label">Imagen</label>
-                                <input id="imagenCategoria" type="file" name="imagenCategoria" class="form-control"
-                                    accept=".png, .jpg">
-                            </div>
                             <div class="col-sm-12 col-md-6">
                                 <label for="nombreCategoria" class="form-label">Nombre</label>
                                 <input id="nombreCategoria" type="text" name="nombreCategoria" class="form-control"
@@ -144,42 +139,10 @@
                                 <input id="descripcionCategoria" type="text" name="descripcionCategoria"
                                     class="form-control" required>
                             </div>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt=""
-                                    height="40px" width="40px"></button>
-                            <button type="button" class="btn" data-bs-dismiss="modal"><img
-                                    src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Componente Modal para editar una categoría -->
-        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar categoría</h1>
-                    </div>
-                    <form>
-                        <div class="modal-body row g-3" id="modal-fondo">
                             <div class="col-sm-12 col-md-6 justify-content-center">
-                                <label for="EditarImagenCategoria" class="form-label">Imagen</label>
-                                <input id="EditarImagenCategoria" type="file" name="EditarImagenCategoria"
-                                    class="form-control" accept=".png, .jpg">
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <label for="EditarNombreCategoria" class="form-label">Nombre</label>
-                                <input id="EditarNombreCategoria" type="text" name="EditarNombreCategoria"
-                                    class="form-control" required>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <label for="EditarDescripcionCategoria" class="form-label">Descripción</label>
-                                <input id="EditarDescripcionCategoria" type="text" name="EditarDescripcionCategoria"
-                                    class="form-control" required>
+                                <label for="imagenCategoria" class="form-label">Imagen</label>
+                                <input id="imagenCategoria" type="file" name="imagenCategoria" class="form-control"
+                                    accept=".png, .jpg">
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
@@ -189,26 +152,6 @@
                                     src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Componente Modal para eliminar una categoría -->
-        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="text-center" id="table">
-                        <img src="../../resources/imgs/adver.png" class="rounded" alt="...">
-                        <h2 class="text-center">Advertencia</h2>
-                        <h4 class="text-center">¿Desea eliminar la categoría?</h4>
-                    </div>
-                    <div class="modal-footer justify-content-center" id="table">
-                        <button type="button" class="btn"><img src="../../resources/imgs/listo.png" alt="" height="40px"
-                                width="40px"></button>
-                        <button type="button" class="btn" data-bs-dismiss="modal"><img
-                                src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
-                    </div>
                 </div>
             </div>
         </div>

@@ -35,13 +35,13 @@ class CategoriaHandler
     {
         $sql = 'INSERT INTO categorias(nombre_categoria, descripcion_categoria, imagen_categoria)
                 VALUES(?, ?, ?)';
-        $params = array($this->nombre, $this->imagen, $this->descripcion);
+        $params = array($this->nombre, $this->descripcion, $this->imagen);
         return Database::executeRow($sql, $params);
     }
 
     public function readAll()
     {
-        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria,
+        $sql = 'SELECT id_categoria, nombre_categoria, descripcion_categoria, imagen_categoria
                 FROM categorias
                 ORDER BY nombre_categoria';
         return Database::getRows($sql);

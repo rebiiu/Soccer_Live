@@ -18,20 +18,20 @@ const SAVE_FORM = document.getElementById('saveForm'),
 // Método del evento para cuando el documento ha cargado.
 document.addEventListener('DOMContentLoaded', () => {
     // Se establece el título del contenido principal.
-    MAIN_TITLE.textContent = 'Gestionar categorías';
+    
     // Llamada a la función para llenar la tabla con los registros existentes.
     fillTable();
 });
 
 // Método del evento para cuando se envía el formulario de buscar.
-SEARCH_FORM.addEventListener('submit', (event) => {
+/*SEARCH_FORM.addEventListener('submit', (event) => {
     // Se evita recargar la página web después de enviar el formulario.
     event.preventDefault();
     // Constante tipo objeto con los datos del formulario.
     const FORM = new FormData(SEARCH_FORM);
     // Llamada a la función para llenar la tabla con los resultados de la búsqueda.
     fillTable(FORM);
-});
+});*/
 
 // Método del evento para cuando se envía el formulario de guardar.
 SAVE_FORM.addEventListener('submit', async (event) => {
