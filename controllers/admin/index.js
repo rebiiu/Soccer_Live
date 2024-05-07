@@ -2,11 +2,14 @@
 const SIGNUP_FORM = document.getElementById('signupForm');
 // Constante para establecer el formulario de inicio de sesión.
 const LOGIN_FORM = document.getElementById('loginForm');
-
+MAIN.style.paddingTop = '0px';
+MAIN.style.paddingBottom = '0px';
+MAIN_TITLE.remove();
+MAIN.classList.remove('container');
 // Método del evento para cuando el documento ha cargado.
 document.addEventListener('DOMContentLoaded', async () => {
     // Llamada a la función para mostrar el encabezado y pie del documento.
-    loadTemplate();
+    //loadTemplate();
     // Petición para consultar los usuarios registrados.
     const DATA = await fetchData(USER_API, 'readUsers');
     // Se comprueba si existe una sesión, de lo contrario se sigue con el flujo normal.
@@ -16,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (DATA.status) {
         console.log('login');
         // Se establece el título del contenido principal.
-        MAIN_TITLE.textContent = 'Iniciar sesión';
+        //MAIN_TITLE.textContent = 'Iniciar sesión';
         // Se muestra el formulario para iniciar sesión.
         LOGIN_FORM.classList.remove('d-none');
         sweetAlert(4, DATA.message, true);
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
         console.log('registro');
         // Se establece el título del contenido principal.
-        MAIN_TITLE.textContent = 'Registrar primer usuario';
+        //MAIN_TITLE.textContent = 'Registrar primer usuario';
         // Se muestra el formulario para registrar el primer usuario.
         SIGNUP_FORM.classList.remove('d-none');
         sweetAlert(4, DATA.error, true);
