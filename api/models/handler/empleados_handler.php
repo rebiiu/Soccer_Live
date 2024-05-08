@@ -21,20 +21,21 @@ class EmpleadoHandler
      *  Métodos para gestionar la cuenta del empleado.
      */
     public function checkUser($username, $password)
-    {
-        $sql = 'SELECT id_empleado, correo_empleado, clave_empleado
-                FROM empleados
-                WHERE  correo_empleado = ?';
-        $params = array($username);
-        $data = Database::getRow($sql, $params);
-        if (password_verify($password, $data['clave_empleado'])) {
-            $_SESSION['idEmpleado'] = $data['id_empleado'];
-            $_SESSION['correoEmpleado'] = $data['correo_empleado'];
-            return true;
-        } else {
-            return false;
-        }
+{
+    $sql = 'SELECT id_empleado, clave_empleado, correo_empleado
+            FROM empleados
+            WHERE  correo_empleado = ?';
+    $params = array($username);
+    $data = Database::getRow($sql, $params);
+    if ($data && password_verify($password, $data['clave_empleado'])) {
+        $_SESSION['idEmpleado'] = $data['id_empleado'];
+        $_SESSION['correoEmpleado'] = $data['correo_empleado'];
+        return true;
+    } else {
+        return false;
     }
+}
+
 
     public function checkPassword($password)
     {

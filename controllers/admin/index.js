@@ -4,7 +4,7 @@ const SIGNUP_FORM = document.getElementById('signupForm');
 const LOGIN_FORM = document.getElementById('loginForm');
 MAIN.style.paddingTop = '0px';
 MAIN.style.paddingBottom = '0px';
-MAIN_TITLE.remove();
+// MAIN_TITLE.remove();
 MAIN.classList.remove('container');
 // Llamada a la función para establecer la mascara del campo teléfono.
 vanillaTextMask.maskInput({
