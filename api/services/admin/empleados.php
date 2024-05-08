@@ -55,11 +55,11 @@ if (isset($_GET['action'])) {
                 break;
             case 'readOne':
                 if (!$empleado->setId($_POST['idEmpleado'])) {
-                    $result['error'] = 'empleado incorrecto';
+                    $result['error'] = 'Empleado incorrecto';
                 } elseif ($result['dataset'] = $empleado->readOne()) {
                     $result['status'] = 1;
                 } else {
-                    $result['error'] = 'empleado inexistente';
+                    $result['error'] = 'Empleado inexistente';
                 }
                 break;
             case 'updateRow':
@@ -76,7 +76,7 @@ if (isset($_GET['action'])) {
                     $result['error'] = $empleado->getDataError();
                 } elseif ($empleado->updateRow()) {
                     $result['status'] = 1;
-                    $result['message'] = 'empleado modificado correctamente';
+                    $result['message'] = 'Empleado modificado correctamente';
                 } else {
                     $result['error'] = 'Ocurrió un problema al modificar el empleado';
                 }
@@ -88,7 +88,7 @@ if (isset($_GET['action'])) {
                     $result['error'] = $empleado->getDataError();
                 } elseif ($empleado->deleteRow()) {
                     $result['status'] = 1;
-                    $result['message'] = 'empleado eliminado correctamente';
+                    $result['message'] = 'Empleado eliminado correctamente';
                 } else {
                     $result['error'] = 'Ocurrió un problema al eliminar el empleado';
                 }
@@ -180,7 +180,7 @@ if (isset($_GET['action'])) {
                     $result['error'] = 'Contraseñas diferentes';
                 } elseif ($empleado->createRow()) {
                     $result['status'] = 1;
-                    $result['message'] = 'empleado registrado correctamente';
+                    $result['message'] = 'Empleado registrado correctamente';
                 } else {
                     $result['error'] = 'Ocurrió un problema al registrar el empleado';
                 }
