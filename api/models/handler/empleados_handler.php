@@ -118,14 +118,14 @@ class EmpleadoHandler
         return Database::getRow($sql, $params);
     }
 
-    /*public function updateRow()
+    public function updateRow()
     {
         $sql = 'UPDATE empleados
                 SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?, clave_empleado = ?, correo_empleado = ? = ?
                 WHERE id_empleado = ?';
-        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo, $this->imagen $this->id);
+        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo, $this->id);
         return Database::executeRow($sql, $params);
-    }*/
+    }
 
     public function deleteRow()
     {

@@ -19,11 +19,6 @@ section {
     color: #FFFFFF;
 }
 
-/*espacio para buscador*/
-#searchForm {
-    padding-left: 215px;
-}
-
 /*contenedor para boton asignar, imagen y la tabla de administración*/
 .container-xl {
     padding: 50px;
@@ -41,6 +36,12 @@ section {
 #boton {
     background-color: #0C3A6B;
 }
+
+#rowsFound {
+    background-color: #0C3A6B;
+    color: white;
+}
+
 
 /*espacio a la imagen*/
 #icon {
@@ -81,7 +82,7 @@ h1 {
 .button-agregar {
     padding: 10px;
     cursor: pointer;
-    background-color: #A8E910;
+    background-color: #458CC6;
     color: white;
     border: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

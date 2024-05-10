@@ -35,10 +35,10 @@ if (isset($_GET['action'])) {
                     !$empleado->setCorreo($_POST['correoEmpleado']) or
                     !$empleado->setClave($_POST['claveEmpleado']) 
                 ) {
-                        $result['error'] = $administrador->getDataError();
+                        $result['error'] = $empleado->getDataError();
                     } elseif ($_POST['claveEmpleado'] != $_POST['confirmarClave']) {
                         $result['error'] = 'Contraseñas diferentes';
-                    } elseif ($administrador->createRow()) {
+                    } elseif ($empleado->createRow()) {
                         $result['status'] = 1;
                         $result['message'] = 'Empleado creado correctamente';
                     } else {

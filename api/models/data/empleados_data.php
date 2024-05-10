@@ -20,7 +20,7 @@ class EmpleadoData extends EmpleadoHandler
             $this->id = $value;
             return true;
         } else {
-            $this->data_error = 'El identificador del administrador es incorrecto';
+            $this->data_error = 'El identificador del empleado es incorrecto';
             return false;
         }
     }
@@ -100,23 +100,6 @@ class EmpleadoData extends EmpleadoHandler
         } else {
             $this->data_error = 'El correo debe tener una longitud entre ' . $min . ' y ' . $max;
             return false;
-        }
-    }
-
-    public function setImagen($file, $filename = null)
-    {
-        if (Validator::validateImageFile($file, 1000)) {
-            $this->imagen = Validator::getFilename();
-            return true;
-        } elseif (Validator::getFileError()) {
-            $this->data_error = Validator::getFileError();
-            return false;
-        } elseif ($filename) {
-            $this->imagen = $filename;
-            return true;
-        } else {
-            $this->imagen = 'default.png';
-            return true;
         }
     }
 
