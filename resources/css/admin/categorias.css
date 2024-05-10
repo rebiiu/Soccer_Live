@@ -68,6 +68,11 @@ h1 {
     padding: 10px;
 }
 
+#rowsFound{
+    background-color: #0C3A6B;
+    color: white;
+}
+
 /*color de fondo a la imagen del buscador*/
 #search-addon {
     background-color: #0C3A6B;

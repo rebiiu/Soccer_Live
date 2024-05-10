@@ -27,6 +27,11 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#rowsFound{
+    background-color: #0C3A6B;
+    color: white;
+}
+
 #boton {
     background-color: #0C3A6B;
 }
