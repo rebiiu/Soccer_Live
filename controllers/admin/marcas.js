@@ -13,14 +13,7 @@ const SAVE_FORM = document.getElementById('saveForm'),
     ID_MARCA = document.getElementById('idMarca'),
     NOMBRE_MARCA = document.getElementById('nombreMarca'),
     CORREO_MARCA = document.getElementById('correoMarca'),
-    TELEFONO_MARCA = document.getElementById('telefonoMarca'),
     IMAGEN_MARCA = document.getElementById('imagenMarca');
-// Llamada a la función para establecer la mascara del campo teléfono.
-vanillaTextMask.maskInput({
-    inputElement: document.getElementById('telefonoMarca'),
-    mask: [/\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
-});
-
 // Método del evento para cuando el documento ha cargado.
 document.addEventListener('DOMContentLoaded', () => {
     // Se establece el título del contenido principal.
@@ -85,7 +78,6 @@ const fillTable = async (form = null) => {
                     <td><img src="${SERVER_URL}images/marcas/${row.imagen_marca}" height="50"></td>
                     <td>${row.nombre_marca}</td>
                     <td>${row.correo_marca}</td>
-                    <td>${row.telefono_marca}</td>
                     <td>
                         <button type="button" class="btn btn-success" onclick="openUpdate(${row.id_marca})">
                             <i class="bi bi-pencil-fill"></i>
@@ -140,7 +132,6 @@ const openUpdate = async (id) => {
         ID_MARCA.value = ROW.id_marca;
         NOMBRE_MARCA.value = ROW.nombre_marca;
         CORREO_MARCA.value = ROW.correo_marca;
-        TELEFONO_MARCA.value = ROW.telefono_marca;
     } else {
         sweetAlert(2, DATA.error, false);
     }

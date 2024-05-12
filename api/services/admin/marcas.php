@@ -29,7 +29,6 @@ if (isset($_GET['action'])) {
                 if (
                     !$marca->setNombre($_POST['nombreMarca']) or
                     !$marca->setCorreo($_POST['correoMarca']) or
-                    !$marca->setTelefono($_POST['telefonoMarca']) or
                     !$marca->setImagen($_FILES['imagenMarca'])
                 ) {
                     $result['error'] = $marca->getDataError();
@@ -66,7 +65,6 @@ if (isset($_GET['action'])) {
                     !$marca->setFilename() or
                     !$marca->setNombre($_POST['nombreMarca']) or
                     !$marca->setCorreo($_POST['correoMarca']) or
-                    !$marca->setTelefono($_POST['telefonoMarca']) or
                     !$marca->setImagen($_FILES['imagenMarca'])
                 ) {
                     $result['error'] = $marca->getDataError();

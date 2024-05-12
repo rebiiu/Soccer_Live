@@ -12,7 +12,6 @@ class MarcaHandler
     protected $id = null;
     protected $nombre = null;
     protected $correo = null;
-    protected $telefono = null;
     protected $imagen = null;
     // Constante para establecer la ruta de las imágenes.
     const RUTA_IMAGEN = '../../images/marcas/';
@@ -23,7 +22,7 @@ class MarcaHandler
     public function searchRows()
     {
         $value = '%' . Validator::getSearchValue() . '%';
-        $sql = 'SELECT id_marca, nombre_marca, correo_marca, telefono_marca, imagen_marca
+        $sql = 'SELECT id_marca, nombre_marca, correo_marca, imagen_marca
                 FROM marcas
                 WHERE nombre_marca LIKE ? OR correo_marca LIKE ?
                 ORDER BY nombre_marca';
@@ -33,15 +32,15 @@ class MarcaHandler
 
     public function createRow()
     {
-        $sql = 'INSERT INTO marcas(nombre_marca, correo_marca, telefono_marca, imagen_marca)
-                VALUES(?, ?, ?, ?)';
-        $params = array($this->nombre, $this->correo, $this->telefono, $this->imagen);
+        $sql = 'INSERT INTO marcas(nombre_marca, correo_marca, imagen_marca)
+                VALUES(?, ?, ?)';
+        $params = array($this->nombre, $this->correo, $this->imagen);
         return Database::executeRow($sql, $params);
     }
 
     public function readAll()
     {
-        $sql = 'SELECT id_marca, nombre_marca, correo_marca, telefono_marca, imagen_marca
+        $sql = 'SELECT id_marca, nombre_marca, correo_marca, imagen_marca
                 FROM marcas
                 ORDER BY nombre_marca';
         return Database::getRows($sql);
@@ -49,7 +48,7 @@ class MarcaHandler
 
     public function readOne()
     {
-        $sql = 'SELECT id_marca, nombre_marca, correo_marca, telefono_marca, imagen_marca
+        $sql = 'SELECT id_marca, nombre_marca, correo_marca, imagen_marca
                 FROM marcas
                 WHERE id_marca = ?';
         $params = array($this->id);
@@ -68,9 +67,9 @@ class MarcaHandler
     public function updateRow()
     {
         $sql = 'UPDATE marcas
-                SET imagen_marca = ?, nombre_marca = ?, telefono_marca = ?, correo_marca = ?
+                SET imagen_marca = ?, nombre_marca = ?, correo_marca = ?
                 WHERE id_marca = ?';
-        $params = array($this->imagen, $this->nombre, $this->telefono, $this->correo, $this->id);
+        $params = array($this->imagen, $this->nombre, $this->correo, $this->id);
         return Database::executeRow($sql, $params);
     }
 
