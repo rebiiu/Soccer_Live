@@ -4,7 +4,7 @@ require_once('../../helpers/validator.php');
 // Se incluye la clase padre.
 require_once('../../models/handler/productos_handler.php');
 /*
- *	Clase para manejar el encapsulamiento de los datos de la tabla PRODUCTO.
+ *	Clase para manejar el encapsulamiento de los datos de la tabla productos.
  */
 class ProductoData extends ProductoHandler
 {
