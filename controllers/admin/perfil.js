@@ -1,77 +1,86 @@
-// Constante para establecer el formulario de registro del primer usuario.
-const SIGNUP_FORM = document.getElementById('signupForm');
-// Constante para establecer el formulario de inicio de sesión.
-const LOGIN_FORM = document.getElementById('loginForm');
-MAIN.style.paddingTop = '0px';
-MAIN.style.paddingBottom = '0px';
-// MAIN_TITLE.remove();
-MAIN.classList.remove('container');
+// Constantes para establecer los elementos del formulario de editar perfil.
+const SIGNUP_FORM = document.getElementById('perfilForm');
+NOMBRE_ADMINISTRADOR = document.getElementById('nombreEmpleado'),
+    APELLIDO_ADMINISTRADOR = document.getElementById('apellidoEmpleado'),
+    CORREO_ADMINISTRADOR = document.getElementById('correoEmpleado'),
+    TELEFONO_ADMINISTRADOR = document.getElementById('telefonoEmpleado')
+
 // Llamada a la función para establecer la mascara del campo teléfono.
 vanillaTextMask.maskInput({
     inputElement: document.getElementById('telefonoEmpleado'),
     mask: [/\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
 });
-// Llamada a la función para establecer la mascara del campo DUI.
-vanillaTextMask.maskInput({
-    inputElement: document.getElementById('duiEmpleado'),
-    mask: [/\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/]
-});
+
+// Constante para establecer la modal de cambiar contraseña.
+const PASSWORD_MODAL = new bootstrap.Modal('#passwordModal');
+// Constante para establecer el formulario de cambiar contraseña.
+const PASSWORD_FORM = document.getElementById('passwordForm');
+
 // Método del evento para cuando el documento ha cargado.
 document.addEventListener('DOMContentLoaded', async () => {
     // Llamada a la función para mostrar el encabezado y pie del documento.
-    //loadTemplate();
-    // Petición para consultar los usuarios registrados.
-    const DATA = await fetchData(USER_API, 'readUsers');
-    // Se comprueba si existe una sesión, de lo contrario se sigue con el flujo normal.
-    if (DATA.session) {
-        // Se direcciona a la página web de bienvenida.
-        location.href = 'inicio.html';
-    } else if (DATA.status) {
-        console.log('login');
-        // Se establece el título del contenido principal.
-        //MAIN_TITLE.textContent = 'Iniciar sesión';
-        // Se muestra el formulario para iniciar sesión.
-        LOGIN_FORM.classList.remove('d-none');
-        sweetAlert(4, DATA.message, true);
-
+    loadTemplate();
+    // Se establece el título del contenido principal.
+    MAIN_TITLE.textContent = 'Editar perfil';
+    // Petición para obtener los datos del usuario que ha iniciado sesión.
+    const DATA = await fetchData(USER_API, 'readProfile');
+    // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
+    if (DATA.status) {
+        // Se inicializan los campos del formulario con los datos del usuario que ha iniciado sesión.
+        const ROW = DATA.dataset;
+        NOMBRE_ADMINISTRADOR.value = ROW.nombre_administrador;
+        APELLIDO_ADMINISTRADOR.value = ROW.apellido_administrador;
+        CORREO_ADMINISTRADOR.value = ROW.correo_administrador;
+        TELEFONO_ADMINISTRADOR.value = ROW.telefono_administrador;
+   
     } else {
-        console.log('registro');
-        // Se establece el título del contenido principal.
-        //MAIN_TITLE.textContent = 'Registrar primer usuario';
-        // Se muestra el formulario para registrar el primer usuario.
-        SIGNUP_FORM.classList.remove('d-none');
-        sweetAlert(4, DATA.error, true);
+        sweetAlert(2, DATA.error, null);
     }
 });
 
-// Método del evento para cuando se envía el formulario de registro del primer usuario.
-SIGNUP_FORM.addEventListener('submit', async (event) => {
+// Método del evento para cuando se envía el formulario de editar perfil.
+PROFILE_FORM.addEventListener('submit', async (event) => {
     // Se evita recargar la página web después de enviar el formulario.
     event.preventDefault();
     // Constante tipo objeto con los datos del formulario.
-    const FORM = new FormData(SIGNUP_FORM);
-    // Petición para registrar el primer usuario del sitio privado.
-    const DATA = await fetchData(USER_API, 'signUp', FORM);
+    const FORM = new FormData(PROFILE_FORM);
+    // Petición para actualizar los datos personales del usuario.
+    const DATA = await fetchData(USER_API, 'editProfile', FORM);
     // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
     if (DATA.status) {
-        sweetAlert(1, DATA.message, true, 'index.html');
+        sweetAlert(1, DATA.message, true);
     } else {
         sweetAlert(2, DATA.error, false);
     }
 });
 
-// Método del evento para cuando se envía el formulario de inicio de sesión.
-LOGIN_FORM.addEventListener('submit', async (event) => {
+// Mètodo del evento para cuando se envía el formulario de cambiar contraseña.
+PASSWORD_FORM.addEventListener('submit', async (event) => {
     // Se evita recargar la página web después de enviar el formulario.
     event.preventDefault();
     // Constante tipo objeto con los datos del formulario.
-    const FORM = new FormData(LOGIN_FORM);
-    // Petición para iniciar sesión.
-    const DATA = await fetchData(USER_API, 'logIn', FORM);
+    const FORM = new FormData(PASSWORD_FORM);
+    // Petición para actualizar la constraseña.
+    const DATA = await fetchData(USER_API, 'changePassword', FORM);
     // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
     if (DATA.status) {
-        sweetAlert(1, DATA.message, true, 'inicio.html');
+        // Se cierra la caja de diálogo.
+        PASSWORD_MODAL.hide();
+        // Se muestra un mensaje de éxito.
+        sweetAlert(1, DATA.message, true);
     } else {
         sweetAlert(2, DATA.error, false);
     }
 });
+
+/*
+*   Función para preparar el formulario al momento de cambiar la constraseña.
+*   Parámetros: ninguno.
+*   Retorno: ninguno.
+*/
+const openPassword = () => {
+    // Se abre la caja de diálogo que contiene el formulario.
+    PASSWORD_MODAL.show();
+    // Se restauran los elementos del formulario.
+    PASSWORD_FORM.reset();
+}

@@ -15,7 +15,7 @@
 
 <body>
     <main>
-        <form>
+        <form class="row g-3" id="perfilForm">
             <section class="vh-100 gradient-custom">
                 <div class="container py-5 h-100">
                     <div class="row justify-content-center align-items-center h-100">
@@ -44,11 +44,6 @@
                                                 class="form-control" required>
                                         </div>
                                         <div class="col-sm-12 col-md-6">
-                                            <label for="duiEmpleado" class="form-label">DUI</label>
-                                            <input id="duiEmpleado" type="text" name="duiEmpleado" class="form-control"
-                                                required>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 offset-md-3 text-center">
                                             <label for="correoEmpleado" class="form-label">Correo
                                                 electrónico</label>
                                             <input id="correoEmpleado" type="email" name="correoEmpleado"
@@ -59,7 +54,7 @@
                                     <div class="mt-4 pt-2 text-center">
                                         <button class="buttonG" type="submit">Guardar</button>
                                         <button class="buttonM" type="submit" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop">Cambiar contraseña</button>
+                                            data-bs-target="#staticBackdrop" onclick="openPassword()">Cambiar contraseña</button>
                                     </div>
                                 </div>
                             </div>
