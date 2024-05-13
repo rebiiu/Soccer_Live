@@ -16,7 +16,8 @@ const SAVE_FORM = document.getElementById('saveForm'),
     IMAGEN_CATEGORIA = document.getElementById('imagenCategoria');
 
 // Método del evento para cuando el documento ha cargado.
-document.addEventListener('DOMContentLoaded', () => {    
+document.addEventListener('DOMContentLoaded', () => { 
+    loadTemplate3();   
     // Llamada a la función para llenar la tabla con los registros existentes.
     fillTable();
 });

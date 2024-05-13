@@ -14,46 +14,7 @@
     <!-- Salto de línea -->
     <br>
     <!-- Contenido de menú del documento -->
-    <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
-        <div class="container">
-            <!-- Logo de la tienda -->
-            <a class="navbar-brand" href="../admin/inicio.html">
-                <img src="../../resources/imgs/logo-no-background.png" alt="..." height="36">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menú de navegacion -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/inicio.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/productos.html">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/categorias.html">CATEGORÍAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/marcas.html">MARCAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/empleados.html">EMPLEADOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/clientes.html">CLIENTES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../admin/pedidos.html" id="pedidos">PEDIDOS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <main>
     <section id="hero" class="d-flex align-items-center">
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center">
@@ -65,7 +26,7 @@
         </div>
     </section>
 
-    <main>
+    
         <div class="container-xl">
             <div class="row">
                 <div class="col-sm-4">
@@ -137,6 +98,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="../../resources/js/sweetalert.min.js"></script>
+    <!-- Llamada al controlador general de la aplicación -->
+    <script type="text/javascript" src="../../controllers/utils/components.js"></script>
+    <!-- Llamada al controlador del sitio privado -->
+    <script type="text/javascript" src="../../controllers/utils/admin.js"></script>
+    <!-- Llamada al controlador de la página web -->
+    <script type="text/javascript" src="../../controllers/admin/pedidos.js"></script>
 </body>
 
 
