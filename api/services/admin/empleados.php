@@ -68,8 +68,7 @@ if (isset($_GET['action'])) {
                     !$empleado->setId($_POST['idEmpleado']) or
                     !$empleado->setNombre($_POST['nombreEmpleado']) or
                     !$empleado->setApellido($_POST['apellidoEmpleado']) or
-                    !$empleado->setTelefono($_POST['telefonoEmpleado']) or
-                    !$empleado->setDui($_POST['duiEmpleado']) 
+                    !$empleado->setTelefono($_POST['telefonoEmpleado'])
                 ) {
                     $result['error'] = $empleado->getDataError();
                 } elseif ($empleado->updateRow()) {

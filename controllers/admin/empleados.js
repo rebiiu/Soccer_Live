@@ -123,6 +123,7 @@ const openCreate = () => {
     MODAL_TITLE.textContent = 'Crear empleado';
     // Se prepara el formulario.
     SAVE_FORM.reset();
+    DUI_EMPLEADO.disabled = false;
     CORREO_EMPLEADO.disabled = false;
     CLAVE_EMPLEADO.disabled = false;
     CONFIRMAR_CLAVE.disabled = false;
@@ -146,6 +147,7 @@ const openUpdate = async (id) => {
         MODAL_TITLE.textContent = 'Actualizar empleado';
         // Se prepara el formulario.
         SAVE_FORM.reset();
+        DUI_EMPLEADO.disabled = true;
         CORREO_EMPLEADO.disabled = true;
         CLAVE_EMPLEADO.disabled = true;
         CONFIRMAR_CLAVE.disabled = true;

@@ -125,7 +125,7 @@ class EmpleadoHandler
     public function updateRow()
     {
         $sql = 'UPDATE empleados
-                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?
+                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?
                 WHERE id_empleado = ?';
         $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->id);
         return Database::executeRow($sql, $params);
