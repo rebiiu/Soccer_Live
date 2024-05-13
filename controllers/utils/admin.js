@@ -25,7 +25,7 @@ const loadTemplate = async () => {
         if (DATA.status) {
             // Se agrega el encabezado de la página web antes del contenido principal.
             MAIN.insertAdjacentHTML('beforebegin', `
-            <header>
+                <br>
                 <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
                     <div class="container">
                             <!-- Se llama a la imagen -->
@@ -61,32 +61,21 @@ const loadTemplate = async () => {
                                     <li class="nav-item">
                                         <a class="nav-link" href="../admin/pedidos.html">PEDIDOS</a>
                                     </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                     </div>
                 </nav>
-            </header>
             `);
         } else {
             sweetAlert(3, DATA.error, false, 'index.html');
-        }
-    } else {
-        // Se comprueba si la página web es la principal, de lo contrario se direcciona a iniciar sesión.
-        if (location.pathname.endsWith('index.html')) {
-            // Se agrega el encabezado de la página web antes del contenido principal.
-            MAIN.insertAdjacentHTML('beforebegin', `
-                <header>
-                    <nav class="navbar fixed-top bg-body-tertiary">
-                        <div class="container">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="../../resources/img/logo.png" alt="inventory" width="50">
-                            </a>
-                        </div>
-                    </nav>
-                </header>
-            `);
-        } else {
-            location.href = 'index.html';
         }
     }
 }

@@ -80,17 +80,6 @@ class EmpleadoData extends EmpleadoHandler
         }
     }
 
-    public function setClave($value)
-    {
-        if (Validator::validatePassword($value)) {
-            $this->clave = password_hash($value, PASSWORD_DEFAULT);
-            return true;
-        } else {
-            $this->data_error = Validator::getPasswordError();
-            return false;
-        }
-    }
-
     public function setCorreo($value, $min = 8, $max = 100)
     {
         if (!Validator::validateEmail($value)) {
@@ -101,6 +90,17 @@ class EmpleadoData extends EmpleadoHandler
             return true;
         } else {
             $this->data_error = 'El correo debe tener una longitud entre ' . $min . ' y ' . $max;
+            return false;
+        }
+    }
+    
+    public function setClave($value)
+    {
+        if (Validator::validatePassword($value)) {
+            $this->clave = password_hash($value, PASSWORD_DEFAULT);
+            return true;
+        } else {
+            $this->data_error = Validator::getPasswordError();
             return false;
         }
     }

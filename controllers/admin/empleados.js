@@ -123,6 +123,9 @@ const openCreate = () => {
     MODAL_TITLE.textContent = 'Crear empleado';
     // Se prepara el formulario.
     SAVE_FORM.reset();
+    CORREO_EMPLEADO.disabled = false;
+    CLAVE_EMPLEADO.disabled = false;
+    CONFIRMAR_CLAVE.disabled = false;
 }
 
 /*
@@ -143,6 +146,9 @@ const openUpdate = async (id) => {
         MODAL_TITLE.textContent = 'Actualizar empleado';
         // Se prepara el formulario.
         SAVE_FORM.reset();
+        CORREO_EMPLEADO.disabled = true;
+        CLAVE_EMPLEADO.disabled = true;
+        CONFIRMAR_CLAVE.disabled = true;
         // Se inicializan los campos con los datos.
         const ROW = DATA.dataset;
         ID_EMPLEADO.value = ROW.id_empleado;
