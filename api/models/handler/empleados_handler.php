@@ -52,6 +52,7 @@ class EmpleadoHandler
         }
     }
 
+
     public function changePassword()
     {
         $sql = 'UPDATE empleado
@@ -69,6 +70,8 @@ class EmpleadoHandler
         $params = array($_SESSION['idEmpleado']);
         return Database::getRow($sql, $params);
     }
+
+
 
     public function editProfile()
     {
@@ -100,6 +103,7 @@ class EmpleadoHandler
         $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo);
         return Database::executeRow($sql, $params);
     }
+    
 
     public function readAll()
     {

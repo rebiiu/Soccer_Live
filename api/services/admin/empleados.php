@@ -80,6 +80,7 @@ if (isset($_GET['action'])) {
                 } else {
                     $result['error'] = 'Ocurrió un problema al modificar el empleado';
                 }
+
                 break;
             case 'deleteRow':
                 if ($_POST['idEmpleado'] == $_SESSION['idEmpleado']) {
@@ -135,6 +136,7 @@ if (isset($_GET['action'])) {
                 } else {
                     $result['error'] = 'Ocurrió un problema al modificar el perfil';
                 }
+                
                 break;
             case 'changePassword':
                 $_POST = Validator::validateForm($_POST);
