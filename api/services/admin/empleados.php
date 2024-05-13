@@ -69,9 +69,7 @@ if (isset($_GET['action'])) {
                     !$empleado->setNombre($_POST['nombreEmpleado']) or
                     !$empleado->setApellido($_POST['apellidoEmpleado']) or
                     !$empleado->setTelefono($_POST['telefonoEmpleado']) or
-                    !$empleado->setDui($_POST['duiEmpleado']) or
-                    !$empleado->setCorreo($_POST['correoEmpleado']) or
-                    !$empleado->setClave($_POST['claveEmpleado']) 
+                    !$empleado->setDui($_POST['duiEmpleado']) 
                 ) {
                     $result['error'] = $empleado->getDataError();
                 } elseif ($empleado->updateRow()) {
@@ -136,7 +134,6 @@ if (isset($_GET['action'])) {
                 } else {
                     $result['error'] = 'Ocurrió un problema al modificar el perfil';
                 }
-                
                 break;
             case 'changePassword':
                 $_POST = Validator::validateForm($_POST);

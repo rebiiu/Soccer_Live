@@ -115,7 +115,7 @@ class EmpleadoHandler
 
     public function readOne()
     {
-        $sql = 'SELECT id_empleado, nombre_empleado, apellido_empleado, telefono_empleado, dui_empleado, correo_empleado, clave_empleado, 
+        $sql = 'SELECT id_empleado, nombre_empleado, apellido_empleado, telefono_empleado, dui_empleado, correo_empleado, clave_empleado
                 FROM empleados
                 WHERE id_empleado = ?';
         $params = array($this->id);
@@ -125,9 +125,9 @@ class EmpleadoHandler
     public function updateRow()
     {
         $sql = 'UPDATE empleados
-                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?, correo_empleado = ?, clave_empleado = ?
+                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?
                 WHERE id_empleado = ?';
-        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->correo, $this->clave, $this->id);
+        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->id);
         return Database::executeRow($sql, $params);
     }
 
