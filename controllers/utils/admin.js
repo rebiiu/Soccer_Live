@@ -9,7 +9,7 @@ const USER_API = 'services/admin/empleados.php';
 const MAIN = document.querySelector('main');
 MAIN.style.paddingTop = '75px';
 MAIN.style.paddingBottom = '100px';
-// MAIN_TITLE.remove();
+const MAIN_TITLE = document.getElementById('mainTitle');
 MAIN.classList.remove('container');
 
 /*  Función asíncrona para cargar el encabezado y pie del documento.
