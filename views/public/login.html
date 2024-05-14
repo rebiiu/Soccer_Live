@@ -15,56 +15,57 @@
 </head>
 
 <body>
-    <!-- Contenido del body-->
-    <div class="login-page" id="fondo2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="bg-white shadow rounded">
-                        <div class="row">
-                            <div class="col-md-7 pe-0">
-                                <div class="form-left h-100 py-5 px-5">
-                                    <!-- Contenido del login-->
-                                    <form action="" class="row g-4">
-                                        <h3 class="text-center" id="h3">Bienvenido, ingresa tus credenciales</h3>
-                                        <div class="col-12">
-                                            <label>Correo electrónico</label>
-                                            <div class="input-group">
+    <main>
+        <form id="sessionForm">
+            <!-- Formulario para iniciar sesión -->
+            <div class="login-page" id="fondo2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="bg-white shadow rounded">
+                                <div class="row">
+                                    <div class="col-md-7 pe-0">
+                                        <div class="form-left h-100 py-5 px-5">
+                                            <!-- Contenido del login-->
+                                            <div class="row g-4">
+                                                <h3 class="text-center" id="h">Bienvenido, ingresa tus credenciales</h3>
+                                                <div class="col-12">
+                                                    <label>Correo electrónico</label>
+                                                    <div class="input-group">
+                                                        <!-- Se llama a la imagen -->
+                                                        <div class="input-group-text"><img
+                                                                src="../../resources/imgs/user.png" alt="" width="20px"
+                                                                height="20px"></div>
+                                                        <input id="correo" type="email" name="correo"
+                                                            class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label>Contraseña</label>
+                                                    <div class="input-group">
+                                                        <!-- Se llama a la imagen -->
+                                                        <div class="input-group-text"><img
+                                                                src="../../resources/imgs/pass.png" alt="" width="20px"
+                                                                height="20px"></div>
+                                                        <input id="clave" type="password" name="clave"
+                                                            class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-info" type="submit" id="sesion">Iniciar
+                                                        sesión</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ps-0 d-none d-md-block" id="form1">
+                                        <div class="form-right h-100 pt-5">
+                                            <div class="form-center row px-3 mb-3">
                                                 <!-- Se llama a la imagen -->
-                                                <div class="input-group-text"><img src="../../resources/imgs/user.png"
-                                                        alt="" width="20px" height="20px"></div>
-                                                <input type="email" class="form-control" placeholder="">
+                                                <img class="cen" src="../../resources/imgs/logo-no-background.png"
+                                                    alt="" width="100px" height="100px">
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <label>Contraseña</label>
-                                            <div class="input-group">
-                                                <!-- Se llama a la imagen -->
-                                                <div class="input-group-text"><img src="../../resources/imgs/pass.png"
-                                                        alt="" width="20px" height="20px"></div>
-                                                <input type="password" class="form-control" placeholder="">
-                                            </div>
-                                            <br>
-                                            <div class="text-center">
-                                                <p><a class="link-offset-2 link-underline link-underline-opacity-10"
-                                                        id="link" href="../../views/public/registro.html">¿No tienes
-                                                        usuario? Regístrate</a></p>
-                                            </div>
-
-                                        </div>
-                                        <!-- Se redirecciona a otra pestaña con el boton -->
-                                        <div class="d-grid gap-2">
-                                            <a href="../public/index.html" class="btn" id="boton">Iniciar sesión</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-5 ps-0 d-none d-md-block" id="form1">
-                                <div class="form-right h-100 pt-5">
-                                    <div class="form-center row px-3 mb-3">
-                                        <!-- Se llama a la imagen -->
-                                        <img class="cen" src="../../resources/imgs/logo-no-background.png" alt=""
-                                            width="100px" height="100px">
                                     </div>
                                 </div>
                             </div>
@@ -72,12 +73,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </form>
+    </main>
+
+    <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
+    <!-- Llamada al framework y librería de mensajes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../resources/js/sweetalert.min.js"></script>
+    <!-- Llamada al controlador general de la aplicación -->
+    <script type="text/javascript" src="../../controllers/utils/components.js"></script>
+    <!-- Llamada al controlador del sitio público -->
+    <script type="text/javascript" src="../../controllers/utils/public.js"></script>
+    <!-- Llamada al controlador de la página web -->
+    <script type="text/javascript" src="../../controllers/public/login.js"></script>
+        
 </body>
-<!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
 </html>
