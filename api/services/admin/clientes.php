@@ -7,18 +7,18 @@ if (isset($_GET['action'])) {
     // Se crea una sesión o se reanuda la actual para poder utilizar variables de sesión en el script.
     session_start();
     // Se instancia la clase correspondiente.
-    $empleado = new ClienteData;
+    $cliente = new ClienteData;
     // Se declara e inicializa un arreglo para guardar el resultado que retorna la API.
     $result = array('status' => 0, 'session' => 0, 'message' => null, 'dataset' => null, 'error' => null, 'exception' => null, 'username' => null);
-    // Se verifica si existe una sesión iniciada como empleado, de lo contrario se finaliza el script con un mensaje de error.
+    // Se verifica si existe una sesión iniciada como cliente, de lo contrario se finaliza el script con un mensaje de error.
     if (isset($_SESSION['idEmpleado'])) {
         $result['session'] = 1;
-        // Se compara la acción a realizar cuando un empleado ha iniciado sesión.
+        // Se compara la acción a realizar cuando un cliente ha iniciado sesión.
         switch ($_GET['action']) {
             case 'searchRows':
                 if (!Validator::validateSearch($_POST['search'])) {
                     $result['error'] = Validator::getSearchError();
-                } elseif ($result['dataset'] = $empleado->searchRows()) {
+                } elseif ($result['dataset'] = $cliente->searchRows()) {
                     $result['status'] = 1;
                     $result['message'] = 'Existen ' . count($result['dataset']) . ' coincidencias';
                 } else {
@@ -26,7 +26,7 @@ if (isset($_GET['action'])) {
                 }
                 break;
             case 'readAll':
-                if ($result['dataset'] = $empleado->readAll()) {
+                if ($result['dataset'] = $cliente->readAll()) {
                     $result['status'] = 1;
                     $result['message'] = 'Existen ' . count($result['dataset']) . ' registros';
                 } else {
@@ -34,26 +34,26 @@ if (isset($_GET['action'])) {
                 }
                 break;
             case 'readOne':
-                if (!$empleado->setId($_POST['idCliente'])) {
+                if (!$cliente->setId($_POST['idCliente'])) {
                     $result['error'] = 'Cliente incorrecto';
-                } elseif ($result['dataset'] = $empleado->readOne()) {
+                } elseif ($result['dataset'] = $cliente->readOne()) {
                     $result['status'] = 1;
                 } else {
-                    $result['error'] = 'Empleado inexistente';
+                    $result['error'] = 'cliente inexistente';
                 }
                 break;
             case 'updateRow':
                 $_POST = Validator::validateForm($_POST);
                 if (
-                    !$empleado->setId($_POST['idCliente']) or
-                    !$producto->setEstado(isset($_POST['estadoProducto']) ? 1 : 0)
+                    !$cliente->setId($_POST['idCliente']) or
+                    !$cliente->setEstado(isset($_POST['estadoCliente']) ? 1 : 0)
                 ) {
-                    $result['error'] = $empleado->getDataError();
-                } elseif ($empleado->updateRow()) {
+                    $result['error'] = $cliente->getDataError();
+                } elseif ($cliente->updateRow()) {
                     $result['status'] = 1;
-                    $result['message'] = 'Empleado modificado correctamente';
+                    $result['message'] = 'cliente modificado correctamente';
                 } else {
-                    $result['error'] = 'Ocurrió un problema al modificar el empleado';
+                    $result['error'] = 'Ocurrió un problema al modificar el cliente';
                 }
 
                 break;
@@ -62,21 +62,21 @@ if (isset($_GET['action'])) {
                     $result['status'] = 1;
                     $result['username'] = $_SESSION['correoCliente'];
                 } else {
-                    $result['error'] = 'Correo de empleado indefinido';
+                    $result['error'] = 'Correo de cliente indefinido';
                 }
                 break;
             default:
                 $result['error'] = 'Acción no disponible dentro de la sesión';
         }
     } else {
-        // Se compara la acción a realizar cuando el empleado no ha iniciado sesión.
+        // Se compara la acción a realizar cuando el cliente no ha iniciado sesión.
         switch ($_GET['action']) {
             case 'readUsers':
-                if ($empleado->readAll()) {
+                if ($cliente->readAll()) {
                     $result['status'] = 1;
                     $result['message'] = 'Debe autenticarse para ingresar';
                 } else {
-                    $result['error'] = 'Debe crear un empleado para comenzar';
+                    $result['error'] = 'Debe crear un cliente para comenzar';
                 }
                 break;
             default:

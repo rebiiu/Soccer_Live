@@ -72,6 +72,34 @@
                     </table>
                 </div>
             </div>
+            <!-- Componente Modal para guardar un registro -->
+            <div class="modal fade" id="saveModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalTitle"></h1>
+                        </div>
+                        <form id="saveForm">
+                            <!-- Campo oculto para asignar el id del registro al momento de modificar -->
+                            <input type="hidden" id="idCliente" name="idCliente">
+                            <div class="modal-body row g-3" id="modal-fondo">
+                                <div class="form-check form-switch form-check-reverse">
+                                    <input class="form-check-input" type="checkbox" id="estadoCliente"
+                                        name="estadoCliente" checked>
+                                    <label class="form-check-label" for="estadoCliente">Estado</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="submit" class="btn"><img src="../../resources/imgs/save.png" alt=""
+                                        height="40px" width="40px"></button>
+                                <button type="button" class="btn" data-bs-dismiss="modal"><img
+                                        src="../../resources/imgs/close.png" alt="" height="40px" width="40px"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -88,4 +116,4 @@
     <script type="text/javascript" src="../../controllers/admin/clientes.js"></script>
 </body>
 
-</html> 
+</html>
