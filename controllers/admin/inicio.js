@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let greeting = '';
     // Dependiendo del número de horas transcurridas en el día, se asigna un saludo para el usuario.
     if (HOUR < 12) {
-        greeting = 'Buenos días';
+        greeting = 'BUENOS DIAS';
     } else if (HOUR < 19) {
-        greeting = 'Buenas tardes';
+        greeting = 'BUENAS TARDES';
     } else if (HOUR <= 23) {
-        greeting = 'Buenas noches';
+        greeting = 'BUENAS NOCHES';
     }
     // Llamada a la función para mostrar el encabezado y pie del documento.
     loadTemplate();
     // Se establece el título del contenido principal.
-    MAIN_TITLE.textContent = `${greeting}, bienvenido`;
+    MAIN_TITLE.textContent = `${greeting}, BIENVENIDO`;
     // Llamada a la funciones que generan los gráficos en la página web.
     graficoBarrasCategorias();
     graficoPastelCategorias();
