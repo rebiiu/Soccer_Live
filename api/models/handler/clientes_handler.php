@@ -118,9 +118,9 @@ class ClienteHandler
     public function updateRow()
     {
         $sql = 'UPDATE clientes
-                SET nombre_cliente = ?, apellido_cliente = ?, direccion_cliente = ?, telefono_cliente = ?, estado_cliente = ?
+                SET estado_cliente = ?
                 WHERE id_cliente = ?';
-        $params = array($this->nombre, $this->apellido, $this->direccion, $this->telefono, $this->estado, $this->id);
+        $params = array($this->estado, $this->id);
         return Database::executeRow($sql, $params);
     }
 

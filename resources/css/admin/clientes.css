@@ -24,11 +24,6 @@ section {
     color: #FFFFFF;
 }
 
-/*espacio para buscador*/
-#searchForm {
-    padding-left: 215px;
-}
-
 /*contenedor para boton asignar, imagen y la tabla de dministracion de clientes*/
 .container-xl {
     padding: 50px;
