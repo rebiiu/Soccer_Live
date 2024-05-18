@@ -2,13 +2,8 @@
   color: #A8E910;
 }
 
-#fondo {
-  background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49);
-}
-
 body {
-  background-color: #081F49 !important;
-  /*background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49) !important;*/
+  background-image: linear-gradient(to right, #14A4EE, #126BA8, #0C3A6B, #081F49) !important;
 }
 
 #buscador {

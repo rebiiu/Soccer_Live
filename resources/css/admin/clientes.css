@@ -24,6 +24,11 @@ section {
     color: #FFFFFF;
 }
 
+#rowsFound{
+    background-color: #0C3A6B;
+    color: white;
+}
+
 main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
