@@ -39,7 +39,7 @@ if (isset($_GET['action'])) {
                 } elseif ($result['dataset'] = $cliente->readOne()) {
                     $result['status'] = 1;
                 } else {
-                    $result['error'] = 'cliente inexistente';
+                    $result['error'] = 'C liente inexistente';
                 }
                 break;
             case 'updateRow':
@@ -51,7 +51,7 @@ if (isset($_GET['action'])) {
                     $result['error'] = $cliente->getDataError();
                 } elseif ($cliente->updateRow()) {
                     $result['status'] = 1;
-                    $result['message'] = 'cliente modificado correctamente';
+                    $result['message'] = 'Cliente modificado correctamente';
                 } else {
                     $result['error'] = 'Ocurrió un problema al modificar el cliente';
                 }
