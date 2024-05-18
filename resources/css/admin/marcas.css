@@ -21,6 +21,10 @@ section {
     border-radius: 10px;
 }
 
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #tabla {
     background-color: #0C3A6B;
     color: #FFFFFF;

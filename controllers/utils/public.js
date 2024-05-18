@@ -29,56 +29,105 @@ const loadTemplate = async () => {
         if (!location.pathname.endsWith('login.html')) {
             // Se agrega el encabezado de la página web antes del contenido principal.
             MAIN.insertAdjacentHTML('beforebegin', `
-            <br>
-            <!-- Contenido de menú del documento-->
-        <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
-            <div class="container">
-                <!-- Se llama a la imagen -->
-                <a class="navbar-brand" href="../public/index.html">
-                    <img src="../../resources/imgs/logo-no-background.png" alt="..." height="36">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menú -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/index.html" id="inicio">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/balones.html">BALONES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/guantes.html">GUANTES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/botellas.html">BOTELLAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/calzado.html">CALZADO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/info.html">¿QUIÉNES SOMOS?</a>
-                        </li>
-                        <li class="nav-item">
-                        <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="cart.html"><i class="bi bi-cart"></i> Carrito</a>
-                        <a class="nav-link" href="#" onclick="logOut2()"><i class="bi bi-box-arrow-left"></i> Cerrar sesión</a>
-                    </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <header>
+                    <br>
+                    <!-- Contenido de menú del documento-->
+                    <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
+                        <div class="container">
+                            <!-- Se llama a la imagen -->
+                            <a class="navbar-brand" href="../public/index.html">
+                                <img src="../../resources/imgs/logo-no-background.png" alt="..." height="36">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Menú -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/index.html" id="inicio">INICIO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/balones.html">BALONES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/guantes.html">GUANTES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/botellas.html">BOTELLAS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/calzado.html">CALZADO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../public/info.html">¿QUIÉNES SOMOS?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <div class="navbar-nav ms-auto">
+                                                <a class="nav-link" href="#"><i class="bi bi-cart"></i> CARRITO</a>
+                                                <a class="nav-link" href="#" onclick="logOut()"><i class="bi bi-box-arrow-left"></i> CERRAR SESIÓN</a>
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
             `);
         } else {
             location.href = 'index.html';
         }
     } else {
-        sweetAlert(3, DATA.error, false, 'index.html');
-
+        // Se agrega el encabezado de la página web antes del contenido principal.
+        MAIN.insertAdjacentHTML('beforebegin', `
+            <header>
+                <br>
+                <!-- Contenido de menú del documento-->
+                <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
+                    <div class="container">
+                        <!-- Se llama a la imagen -->
+                        <a class="navbar-brand" href="../public/index.html">
+                            <img src="../../resources/imgs/logo-no-background.png" alt="..." height="36">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Menú -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/index.html" id="inicio">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/balones.html">BALONES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/guantes.html">GUANTES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/botellas.html">BOTELLAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/calzado.html">CALZADO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../public/info.html">¿QUIÉNES SOMOS?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="navbar-nav ms-auto">
+                                        <a class="nav-link" href="registro.html"><i class="bi bi-person"></i> CREAR CUENTA </a>
+                                        <a class="nav-link" href="login.html"><i class="bi bi-box-arrow-right"></i> INICIAR SESIÓN</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        `);
     }
 }

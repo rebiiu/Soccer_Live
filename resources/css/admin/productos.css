@@ -15,6 +15,10 @@ section {
     overflow: hidden;
 }
 
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFFFFF;
@@ -57,7 +61,7 @@ h1 {
     padding: 10px;
 }
 
-#rowsFound{
+#rowsFound {
     background-color: #0C3A6B;
     color: white;
 }

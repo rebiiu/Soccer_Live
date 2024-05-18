@@ -24,6 +24,10 @@ section {
     color: #FFFFFF;
 }
 
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /*contenedor para boton asignar, imagen y la tabla de dministracion de clientes*/
 .container-xl {
     padding: 50px;
