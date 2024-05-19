@@ -20,28 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
             apellido: apellido,
             telefono: telefono,
             correo: correo
-        };
-
-        // Realiza una solicitud HTTP POST para actualizar el perfil
-        fetch('/ruta-de-tu-servidor-para-actualizar-perfil', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(datosPerfil)
-        })
-        .then(response => {
-            // Verifica si la solicitud fue exitosa
-            if (response.ok) {
-                // Notifica al usuario que el perfil se ha actualizado
-                alert('Perfil actualizado exitosamente');
-                // Puedes redirigir al usuario a otra página si lo deseas
-                window.location.href = '/ruta-de-redireccion';
-            } else {
-                // Si hay un error, muestra un mensaje de error
-                throw new Error('Error al actualizar el perfil');
-            }
-        })
+        }
+      
         .catch(error => {
             // Maneja el error
             console.error('Error:', error);
