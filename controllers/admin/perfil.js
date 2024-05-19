@@ -1,86 +1,51 @@
-// Constantes para establecer los elementos del formulario de editar perfil.
-const SIGNUP_FORM = document.getElementById('perfilForm');
-NOMBRE_ADMINISTRADOR = document.getElementById('nombreEmpleado'),
-    APELLIDO_ADMINISTRADOR = document.getElementById('apellidoEmpleado'),
-    CORREO_ADMINISTRADOR = document.getElementById('correoEmpleado'),
-    TELEFONO_ADMINISTRADOR = document.getElementById('telefonoEmpleado')
+// Espera a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona el formulario de perfil por su ID
+    const perfilForm = document.getElementById('perfilForm');
 
-// Llamada a la función para establecer la mascara del campo teléfono.
-vanillaTextMask.maskInput({
-    inputElement: document.getElementById('telefonoEmpleado'),
-    mask: [/\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+    // Agrega un evento de escucha para el envío del formulario
+    perfilForm.addEventListener('submit', function (event) {
+        // Evita el comportamiento predeterminado de envío del formulario
+        event.preventDefault();
+
+        // Captura los valores del formulario
+        const nombre = document.getElementById('nombreEmpleado').value;
+        const apellido = document.getElementById('apellidoEmpleado').value;
+        const telefono = document.getElementById('telefonoEmpleado').value;
+        const correo = document.getElementById('correoEmpleado').value;
+
+        // Objeto con los datos a enviar al servidor
+        const datosPerfil = {
+            nombre: nombre,
+            apellido: apellido,
+            telefono: telefono,
+            correo: correo
+        };
+
+        // Realiza una solicitud HTTP POST para actualizar el perfil
+        fetch('/ruta-de-tu-servidor-para-actualizar-perfil', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(datosPerfil)
+        })
+        .then(response => {
+            // Verifica si la solicitud fue exitosa
+            if (response.ok) {
+                // Notifica al usuario que el perfil se ha actualizado
+                alert('Perfil actualizado exitosamente');
+                // Puedes redirigir al usuario a otra página si lo deseas
+                window.location.href = '/ruta-de-redireccion';
+            } else {
+                // Si hay un error, muestra un mensaje de error
+                throw new Error('Error al actualizar el perfil');
+            }
+        })
+        .catch(error => {
+            // Maneja el error
+            console.error('Error:', error);
+            alert('Ocurrió un error al actualizar el perfil');
+        });
+    });
 });
-
-// Constante para establecer la modal de cambiar contraseña.
-const PASSWORD_MODAL = new bootstrap.Modal('#passwordModal');
-// Constante para establecer el formulario de cambiar contraseña.
-const PASSWORD_FORM = document.getElementById('passwordForm');
-
-// Método del evento para cuando el documento ha cargado.
-document.addEventListener('DOMContentLoaded', async () => {
-    // Llamada a la función para mostrar el encabezado y pie del documento.
-    loadTemplate();
-    // Se establece el título del contenido principal.
-    MAIN_TITLE.textContent = 'Editar perfil';
-    // Petición para obtener los datos del usuario que ha iniciado sesión.
-    const DATA = await fetchData(USER_API, 'readProfile');
-    // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
-    if (DATA.status) {
-        // Se inicializan los campos del formulario con los datos del usuario que ha iniciado sesión.
-        const ROW = DATA.dataset;
-        NOMBRE_ADMINISTRADOR.value = ROW.nombre_administrador;
-        APELLIDO_ADMINISTRADOR.value = ROW.apellido_administrador;
-        CORREO_ADMINISTRADOR.value = ROW.correo_administrador;
-        TELEFONO_ADMINISTRADOR.value = ROW.telefono_administrador;
-   
-    } else {
-        sweetAlert(2, DATA.error, null);
-    }
-});
-
-// Método del evento para cuando se envía el formulario de editar perfil.
-PROFILE_FORM.addEventListener('submit', async (event) => {
-    // Se evita recargar la página web después de enviar el formulario.
-    event.preventDefault();
-    // Constante tipo objeto con los datos del formulario.
-    const FORM = new FormData(PROFILE_FORM);
-    // Petición para actualizar los datos personales del usuario.
-    const DATA = await fetchData(USER_API, 'editProfile', FORM);
-    // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
-    if (DATA.status) {
-        sweetAlert(1, DATA.message, true);
-    } else {
-        sweetAlert(2, DATA.error, false);
-    }
-});
-
-// Mètodo del evento para cuando se envía el formulario de cambiar contraseña.
-PASSWORD_FORM.addEventListener('submit', async (event) => {
-    // Se evita recargar la página web después de enviar el formulario.
-    event.preventDefault();
-    // Constante tipo objeto con los datos del formulario.
-    const FORM = new FormData(PASSWORD_FORM);
-    // Petición para actualizar la constraseña.
-    const DATA = await fetchData(USER_API, 'changePassword', FORM);
-    // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
-    if (DATA.status) {
-        // Se cierra la caja de diálogo.
-        PASSWORD_MODAL.hide();
-        // Se muestra un mensaje de éxito.
-        sweetAlert(1, DATA.message, true);
-    } else {
-        sweetAlert(2, DATA.error, false);
-    }
-});
-
-/*
-*   Función para preparar el formulario al momento de cambiar la constraseña.
-*   Parámetros: ninguno.
-*   Retorno: ninguno.
-*/
-const openPassword = () => {
-    // Se abre la caja de diálogo que contiene el formulario.
-    PASSWORD_MODAL.show();
-    // Se restauran los elementos del formulario.
-    PASSWORD_FORM.reset();
-}
