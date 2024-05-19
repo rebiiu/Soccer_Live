@@ -28,11 +28,6 @@ main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*espacio para buscador*/
-#searchForm {
-    padding-left: 215px;
-}
-
 /*contenedor para boton asignar, imagen y la tabla de dministracion de clientes*/
 .container-xl {
     padding: 50px;
