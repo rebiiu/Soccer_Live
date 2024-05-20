@@ -25,7 +25,6 @@ const loadTemplate = async () => {
         if (DATA.status) {
             // Se agrega el encabezado de la página web antes del contenido principal.
             MAIN.insertAdjacentHTML('beforebegin', `
-                <br>
                 <nav class="navbar navbar-expand-lg navbar-dark static-top" id="fondo">
                     <div class="container">
                             <!-- Se llama a la imagen -->
