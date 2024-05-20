@@ -40,7 +40,7 @@ class EmpleadoHandler
     public function checkPassword($password)
     {
         $sql = 'SELECT clave_empleado
-                FROM empleado
+                FROM empleados
                 WHERE id_empleado = ?';
         $params = array($_SESSION['idEmpleado']);
         $data = Database::getRow($sql, $params);
@@ -55,7 +55,7 @@ class EmpleadoHandler
 
     public function changePassword()
     {
-        $sql = 'UPDATE empleado
+        $sql = 'UPDATE empleados
                 SET clave_empleado = ?
                 WHERE id_empleado = ?';
         $params = array($this->clave, $_SESSION['idEmpleado']);
@@ -76,9 +76,9 @@ class EmpleadoHandler
     public function editProfile()
     {
         $sql = 'UPDATE empleados
-                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, dui_empleado = ?, correo_empleado = ?, clave_empleado = ?
+                SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?, correo_empleado = ?
                 WHERE id_empleado = ?';
-        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->clave, $this->correo, $_SESSION['idEmpleado']);
+        $params = array($this->nombre, $this->apellido, $this->telefono, $this->correo, $_SESSION['idEmpleado']);
         return Database::executeRow($sql, $params);
     }
 

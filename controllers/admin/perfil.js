@@ -4,20 +4,16 @@ const PERFIL_FORM = document.getElementById('perfilForm'),
     APELLIDO_EMPLEADO = document.getElementById('apellidoEmpleado'),
     TELEFONO_EMPLEADO = document.getElementById('telefonoEmpleado'),
     CORREO_EMPLEADO = document.getElementById('correoEmpleado');
-
-
 const PASSWORD_MODAL = new bootstrap.Modal('#passwordModal');
 // Constante para establecer el formulario de cambiar contraseña.
 const PASSWORD_FORM = document.getElementById('passwordForm');
-
-
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Llamada a la función para mostrar el encabezado y pie del documento.
     loadTemplate();
 
     // Petición para obtener los datos del usuario que ha iniciado sesión.
-    const DATA = await fetchData(USER_API, 'readperfil');
+    const DATA = await fetchData(USER_API, 'readProfile');
     // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
     if (DATA.status) {
         // Se inicializan los campos del formulario con los datos del usuario que ha iniciado sesión.
@@ -37,7 +33,7 @@ PERFIL_FORM.addEventListener('submit', async (event) => {
     // Constante tipo objeto con los datos del formulario.
     const FORM = new FormData(PERFIL_FORM);
     // Petición para actualizar los datos personales del usuario.
-    const DATA = await fetchData(USER_API, 'editPerfil', FORM);
+    const DATA = await fetchData(USER_API, 'editProfile', FORM);
     // Se comprueba si la respuesta es satisfactoria, de lo contrario se muestra un mensaje con la excepción.
     if (DATA.status) {
         sweetAlert(1, DATA.message, true);

@@ -117,13 +117,10 @@ if (isset($_GET['action'])) {
             case 'editProfile':
                 $_POST = Validator::validateForm($_POST);
                 if (
-                    !$empleado->setId($_POST['idEmpleado']) or
                     !$empleado->setNombre($_POST['nombreEmpleado']) or
                     !$empleado->setApellido($_POST['apellidoEmpleado']) or
                     !$empleado->setTelefono($_POST['telefonoEmpleado']) or
-                    !$empleado->setDui($_POST['duiEmpleado']) or
-                    !$empleado->setCorreo($_POST['correoEmpleado']) or
-                    !$empleado->setClave($_POST['claveEmpleado'])
+                    !$empleado->setCorreo($_POST['correoEmpleado'])
                 ) {
                     $result['error'] = $empleado->getDataError();
                 } elseif ($empleado->editProfile()) {
