@@ -127,7 +127,7 @@ class EmpleadoHandler
         $sql = 'UPDATE empleados
                 SET nombre_empleado = ?, apellido_empleado = ?, telefono_empleado = ?
                 WHERE id_empleado = ?';
-        $params = array($this->nombre, $this->apellido, $this->telefono, $this->dui, $this->id);
+        $params = array($this->nombre, $this->apellido, $this->telefono, $this->id);
         return Database::executeRow($sql, $params);
     }
 

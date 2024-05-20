@@ -124,7 +124,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #fff;
+  background: #458CC6;
   transition: 0.5s;
   height: 100%;
 }
@@ -151,7 +151,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: #fff;
 }
 
 .team .member span {
@@ -168,7 +168,6 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: white;
   bottom: 0;
   left: 0;
 }
@@ -196,14 +195,14 @@ section {
   background: #eff2f8;
 }
 
+span {
+  color: #fff;
+}
+
 .team .member .social a i {
   color: #37517e;
   font-size: 16px;
   margin: 0 2px;
-}
-
-.team .member .social a:hover {
-  background: #081F49;
 }
 
 .team .member .social a:hover i {
@@ -218,7 +217,7 @@ section {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #fff;
+  background: #458CC6;
 }
 
 .services .icon-box .icon {
@@ -226,7 +225,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #081F49;
+  color: #fff;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -238,7 +237,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #37517e;
+  color: #fff;
   transition: ease-in-out 0.3s;
 }
 
@@ -253,6 +252,9 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #081F49;
+  color: #fff;
 }
 
+#servi{
+  color: #fff;
+}
