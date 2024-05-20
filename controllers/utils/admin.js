@@ -192,7 +192,7 @@ const loadTemplate3 = async () => {
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><a class="dropdown-item" href="../admin/perfil.html">Editar perfil</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
                                         </ul>
@@ -256,7 +256,7 @@ const loadTemplate4 = async () => {
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><a class="dropdown-item" href="../admin/perfil.html">Editar perfil</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
                                         </ul>
@@ -320,7 +320,7 @@ const loadTemplate5 = async () => {
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><a class="dropdown-item" href="../admin/perfil.html">Editar perfil</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
                                         </ul>
@@ -384,7 +384,7 @@ const loadTemplate6 = async () => {
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><a class="dropdown-item" href="../admin/perfil.html">Editar perfil</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
                                         </ul>
@@ -448,7 +448,7 @@ const loadTemplate7 = async () => {
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta: <b>${DATA.username}</b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="profile.html">Editar perfil</a></li>
+                                            <li><a class="dropdown-item" href="../admin/perfil.html">Editar perfil</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#" onclick="logOut()">Cerrar sesión</a></li>
                                         </ul>
